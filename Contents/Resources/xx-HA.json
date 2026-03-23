@@ -1,0 +1,1824 @@
+{
+  "+/cwsayrqk": [
+    {
+      "type": 0,
+      "value": "[javascript]Actual Size"
+    }
+  ],
+  "+7sd9hoyZA": [
+    {
+      "type": 0,
+      "value": "[javascript]Copy"
+    }
+  ],
+  "+NwlCZ9GfR": [
+    {
+      "type": 0,
+      "value": "[javascript]You are not logged in. Please log in to access the extensions directory."
+    }
+  ],
+  "/PgA81GVOD": [
+    {
+      "type": 0,
+      "value": "[javascript]Edit"
+    }
+  ],
+  "/bRGKhnXQ6": [
+    {
+      "type": 0,
+      "value": "[javascript]A new version is available. It will be downloaded and installed automatically."
+    }
+  ],
+  "06KK1e0srf": [
+    {
+      "type": 0,
+      "value": "[javascript]The ownership fix didn't complete. Auto-updates may not work until this is resolved. You can try again next time."
+    }
+  ],
+  "0GT0SIETlE": [
+    {
+      "type": 0,
+      "value": "[javascript]Cancel"
+    }
+  ],
+  "0NmcPHSn/L": [
+    {
+      "type": 0,
+      "value": "[javascript]Ownership fix failed"
+    }
+  ],
+  "0eJo9Vzuvt": [
+    {
+      "type": 0,
+      "value": "[javascript]Trust "
+    },
+    {
+      "type": 1,
+      "value": "cwd"
+    },
+    {
+      "type": 0,
+      "value": " and start a code session?"
+    }
+  ],
+  "0tZLEYF8mJ": [
+    {
+      "type": 0,
+      "value": "[javascript]Developer"
+    }
+  ],
+  "0vttuC3ieI": [
+    {
+      "type": 0,
+      "value": "[javascript]Load Remote Claude.ai"
+    }
+  ],
+  "1HUTYwndT2": [
+    {
+      "type": 0,
+      "value": "[javascript]Window"
+    }
+  ],
+  "1nSZez10qJ": [
+    {
+      "type": 0,
+      "value": "[javascript]Failed to preview extension"
+    }
+  ],
+  "1o7ejsqYGi": [
+    {
+      "type": 0,
+      "value": "[javascript]Extension installation failed"
+    }
+  ],
+  "2/2BMRHIA/": [
+    {
+      "type": 0,
+      "value": "[javascript]Debug"
+    }
+  ],
+  "2OTyZOnjhc": [
+    {
+      "type": 0,
+      "value": "[javascript]The extension could not be previewed due to the following error. Please ensure the DXT file is valid and try again. "
+    },
+    {
+      "type": 1,
+      "value": "errorMessage"
+    }
+  ],
+  "2Spx55hKaC": [
+    {
+      "type": 0,
+      "value": "[javascript]This feature requires macOS 13.0 or higher"
+    }
+  ],
+  "2cplZXFjPL": [
+    {
+      "type": 0,
+      "value": "[javascript]Reinstall workspace"
+    }
+  ],
+  "38E9oKs/ky": [
+    {
+      "type": 0,
+      "value": "[javascript]Delete Cowork VM Sessions and Restart…"
+    }
+  ],
+  "39r88rYBHt": [
+    {
+      "type": 0,
+      "value": "[javascript]Submit Feedback - Claude"
+    }
+  ],
+  "3FWTqed5/h": [
+    {
+      "type": 0,
+      "value": "[javascript]Open Link in Browser"
+    }
+  ],
+  "3ML3xT+gEV": [
+    {
+      "type": 0,
+      "value": "[javascript]Redo"
+    }
+  ],
+  "3unrKzH4zB": [
+    {
+      "type": 0,
+      "value": "[javascript]Copy"
+    }
+  ],
+  "4G+5nA56fK": [
+    {
+      "type": 0,
+      "value": "[javascript]Cowork has been disabled by your organization administrator"
+    }
+  ],
+  "4KjH9o80Fc": [
+    {
+      "type": 0,
+      "value": "[javascript]Checking for Updates..."
+    }
+  ],
+  "4MLbtbVfJv": [
+    {
+      "type": 0,
+      "value": "[javascript]Cut"
+    }
+  ],
+  "4R0oWVuAfJ": [
+    {
+      "type": 0,
+      "value": "[javascript]Not now"
+    }
+  ],
+  "4XmExNuKUb": [
+    {
+      "type": 0,
+      "value": "[javascript]Troubleshooting"
+    }
+  ],
+  "4wArDWCxOC": [
+    {
+      "type": 0,
+      "value": "[javascript]Delete VM Sessions and Restart"
+    }
+  ],
+  "5ASYey6oV6": [
+    {
+      "type": 0,
+      "value": "[javascript]Install and restart Chrome"
+    }
+  ],
+  "5DUIVR3fVi": [
+    {
+      "type": 0,
+      "value": "[javascript]About..."
+    }
+  ],
+  "5d9BF195un": [
+    {
+      "type": 0,
+      "value": "[javascript]Restart Chrome"
+    }
+  ],
+  "5fDh29sjSc": [
+    {
+      "type": 0,
+      "value": "[javascript]Failed to reload MCP configuration. Please check the logs for more details."
+    }
+  ],
+  "6Blr2N4E48": [
+    {
+      "type": 0,
+      "value": "[javascript]Delete and Restart"
+    }
+  ],
+  "6yMDaC30L4": [
+    {
+      "type": 0,
+      "value": "[javascript]This extension requires a valid signature"
+    }
+  ],
+  "6yv8ytK4El": [
+    {
+      "type": 0,
+      "value": "[javascript]Check your network connection"
+    }
+  ],
+  "7Arh/jSQPF": [
+    {
+      "type": 0,
+      "value": "[javascript]This will open "
+    },
+    {
+      "type": 1,
+      "value": "appName"
+    },
+    {
+      "type": 0,
+      "value": " to compose a message to "
+    },
+    {
+      "type": 1,
+      "value": "email"
+    },
+    {
+      "type": 0,
+      "value": "."
+    }
+  ],
+  "7BkU20KRFT": [
+    {
+      "type": 0,
+      "value": "[javascript]Cowork requires Windows 10 build 2004 or later. Update your operating system to use this feature."
+    }
+  ],
+  "7DG1YUwIAv": [
+    {
+      "type": 0,
+      "value": "[javascript]Enable Cowork VM Debug Logging"
+    }
+  ],
+  "7G27hVrdBJ": [
+    {
+      "type": 0,
+      "value": "[javascript]Install"
+    }
+  ],
+  "7fdcqxofEs": [
+    {
+      "type": 0,
+      "value": "[javascript]Exit"
+    }
+  ],
+  "7uauQ/gScy": [
+    {
+      "type": 0,
+      "value": "[javascript]Only folders within your home directory can be used. "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 7
+            },
+            {
+              "type": 0,
+              "value": " folder was"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 7
+            },
+            {
+              "type": 0,
+              "value": " folders were"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "skipped"
+    },
+    {
+      "type": 0,
+      "value": " skipped."
+    }
+  ],
+  "82jNv3f0M7": [
+    {
+      "type": 0,
+      "value": "[javascript]Learn Spelling"
+    }
+  ],
+  "8ABQf0B1B0": [
+    {
+      "type": 0,
+      "value": "[javascript]Preview"
+    }
+  ],
+  "8Ru8/2NkQP": [
+    {
+      "type": 0,
+      "value": "[javascript]Extension preview failed"
+    }
+  ],
+  "8W7dNhwk37": [
+    {
+      "type": 0,
+      "value": "[javascript]"
+    },
+    {
+      "type": 1,
+      "value": "extensionDetails"
+    },
+    {
+      "type": 0,
+      "value": " These extensions will remain installed and can be re-enabled if you switch to an organization where they are allowed. You can also delete them from Settings."
+    }
+  ],
+  "8YQEOfuaGO": [
+    {
+      "type": 0,
+      "value": "[javascript]Select All"
+    }
+  ],
+  "9+afSO9e/t": [
+    {
+      "type": 0,
+      "value": "[javascript]Failed to check for updates: "
+    },
+    {
+      "type": 1,
+      "value": "error"
+    }
+  ],
+  "9DyIMdlUEL": [
+    {
+      "type": 0,
+      "value": "[javascript]Error accessing logs"
+    }
+  ],
+  "9OBj0jX9+a": [
+    {
+      "type": 0,
+      "value": "[javascript]Link couldn't be opened"
+    }
+  ],
+  "9OFtp2pNVO": [
+    {
+      "type": 0,
+      "value": "[javascript]Cancel"
+    }
+  ],
+  "9aJv5Q6PQw": [
+    {
+      "type": 0,
+      "value": "[javascript]Skip feedback and reinstall"
+    }
+  ],
+  "9r3qRuB970": [
+    {
+      "type": 0,
+      "value": "[javascript]Would you like to submit your issue with debug logs? Submitting your issue with logs will send the entire current conversation as well as system information to Anthropic for debugging and future improvements to our models."
+    }
+  ],
+  "AAoe5u9j1e": [
+    {
+      "type": 0,
+      "value": "[javascript]Do you want to install "
+    },
+    {
+      "type": 1,
+      "value": "extensionName"
+    },
+    {
+      "type": 0,
+      "value": "?"
+    }
+  ],
+  "AikjBHvhjy": [
+    {
+      "type": 0,
+      "value": "[javascript]Login to Claude in Chrome"
+    }
+  ],
+  "AtL30+PDZZ": [
+    {
+      "type": 0,
+      "value": "[javascript]Claude needs microphone permission"
+    }
+  ],
+  "C/K/kK/zlp": [
+    {
+      "type": 0,
+      "value": "[javascript]Cowork requires virtualization. Your Mac does not support virtualization. If you are currently running macOS inside a virtual machine (like Parallels), you might need to enable a feature called 'nested virtualization'."
+    }
+  ],
+  "CDnvwxVwpJ": [
+    {
+      "type": 0,
+      "value": "[javascript]The following extensions have been disabled because they are not allowed in your current organization:"
+    }
+  ],
+  "CizRPROPWo": [
+    {
+      "type": 0,
+      "value": "[javascript]Claude Help"
+    }
+  ],
+  "CspaHtRhfg": [
+    {
+      "type": 0,
+      "value": "[javascript]Open Extensions Folder..."
+    }
+  ],
+  "D0sIyzNO/8": [
+    {
+      "type": 0,
+      "value": "[javascript]The Chrome extension needs to be signed in with the same account as Claude Desktop ("
+    },
+    {
+      "type": 1,
+      "value": "email"
+    },
+    {
+      "type": 0,
+      "value": "). Open the extension, sign in if needed, and make sure the accounts match. If you've just installed the extension, try restarting Chrome."
+    }
+  ],
+  "D4DyT6MmPy": [
+    {
+      "type": 0,
+      "value": "[javascript]Could not load app settings"
+    }
+  ],
+  "DPsM7/BhfA": [
+    {
+      "type": 0,
+      "value": "[javascript]Show Logs in Finder"
+    }
+  ],
+  "DQTgg21B7g": [
+    {
+      "type": 0,
+      "value": "[javascript]Show App"
+    }
+  ],
+  "Drf4+ubb3h": [
+    {
+      "type": 0,
+      "value": "[javascript]Make sure you are signed in to Claude in Chrome with the same account as Claude Desktop."
+    }
+  ],
+  "EfdnINFnIz": [
+    {
+      "type": 0,
+      "value": "[javascript]File"
+    }
+  ],
+  "EmeqFY8DA1": [
+    {
+      "type": 0,
+      "value": "[javascript]Cowork requires Claude Desktop be installed with our modern installer"
+    }
+  ],
+  "FQTy8EJmqH": [
+    {
+      "type": 0,
+      "value": "[javascript]Open Extension Settings"
+    }
+  ],
+  "HOyJhbAD40": [
+    {
+      "type": 0,
+      "value": "[javascript]Restart Now"
+    }
+  ],
+  "HQ9fMJxTjW": [
+    {
+      "type": 0,
+      "value": "[javascript]Cowork is not currently supported on Windows on Arm. Coming Soon."
+    }
+  ],
+  "HmOsjnFwIk": [
+    {
+      "type": 0,
+      "value": "[javascript]The extension "
+    },
+    {
+      "type": 1,
+      "value": "extensionName"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "organizationText"
+    },
+    {
+      "type": 0,
+      "value": " has an update available."
+    }
+  ],
+  "IsRn01mSn6": [
+    {
+      "type": 0,
+      "value": "[javascript]Do not attach logs"
+    }
+  ],
+  "JOISpUWyGN": [
+    {
+      "type": 0,
+      "value": "[javascript]The skill file could not be found."
+    }
+  ],
+  "JOf7G+dCf1": [
+    {
+      "type": 0,
+      "value": "[javascript]Open App Config File..."
+    }
+  ],
+  "JVwNvMZjVT": [
+    {
+      "type": 0,
+      "value": "[javascript]Paste"
+    }
+  ],
+  "JdZ6sg/SPx": [
+    {
+      "type": 0,
+      "value": "[javascript]Submit Feedback and Reinstall Workspace"
+    }
+  ],
+  "JlcyIK3E4r": [
+    {
+      "type": 0,
+      "value": "[javascript]Delete VM Bundle and Restart"
+    }
+  ],
+  "JqJWa8ljgB": [
+    {
+      "type": 0,
+      "value": "[javascript]Claude will have read and write access to this folder. It will also be trusted in the Code tab."
+    }
+  ],
+  "K5GtyaPaw/": [
+    {
+      "type": 0,
+      "value": "[javascript]Open Developer Config File..."
+    }
+  ],
+  "KAo3lt5Hv+": [
+    {
+      "type": 0,
+      "value": "[javascript]Paste"
+    }
+  ],
+  "KETtxy51p+": [
+    {
+      "type": 0,
+      "value": "[javascript]Inspect Element"
+    }
+  ],
+  "KUGSi676tz": [
+    {
+      "type": 0,
+      "value": "[javascript]Failed to install extension"
+    }
+  ],
+  "KUSSz7hnrh": [
+    {
+      "type": 0,
+      "value": "[javascript]Skill file error"
+    }
+  ],
+  "KeAjLbyOJs": [
+    {
+      "type": 0,
+      "value": "[javascript]The Chrome extension needs to be signed in with the same account as Claude Desktop. Open the extension, sign in if needed, and make sure the accounts match. If you've just installed the extension, try restarting Chrome."
+    }
+  ],
+  "Ko/2Ml7mZG": [
+    {
+      "type": 0,
+      "value": "[javascript]Reload This Page"
+    }
+  ],
+  "L7zYnb34AH": [
+    {
+      "type": 0,
+      "value": "[javascript]Error clearing cache"
+    }
+  ],
+  "LCWUQ/4Fu6": [
+    {
+      "type": 0,
+      "value": "[javascript]View"
+    }
+  ],
+  "LN5XCdewH0": [
+    {
+      "type": 0,
+      "value": "[javascript]This allows Claude to work with websites directly in your browser. Only grant \"always allow\" for sites you trust."
+    }
+  ],
+  "LShRh03tIJ": [
+    {
+      "type": 0,
+      "value": "[javascript]Record Net Log (30s)"
+    }
+  ],
+  "Lw6AWRo971": [
+    {
+      "type": 0,
+      "value": "[javascript]Skill file is too large. Maximum size is 30 MB."
+    }
+  ],
+  "MNF5cWO3lm": [
+    {
+      "type": 0,
+      "value": "[javascript]from your organization"
+    }
+  ],
+  "MVVosgIfRl": [
+    {
+      "type": 0,
+      "value": "[javascript]Attach logs"
+    }
+  ],
+  "MpGNf3UQ/u": [
+    {
+      "type": 0,
+      "value": "[javascript]Failed to open skill file."
+    }
+  ],
+  "N3XFOdWdG+": [
+    {
+      "type": 0,
+      "value": "[javascript]Claude Code for Desktop has been disabled by your organization administrator"
+    }
+  ],
+  "NNEmTvq77p": [
+    {
+      "type": 0,
+      "value": "[javascript]from "
+    },
+    {
+      "type": 1,
+      "value": "orgName"
+    }
+  ],
+  "Nmvo1ufAY5": [
+    {
+      "type": 0,
+      "value": "[javascript]Couldn't connect to Claude"
+    }
+  ],
+  "NoMbiF3ygy": [
+    {
+      "type": 0,
+      "value": "[javascript]This feature requires macOS 14.0 or higher"
+    }
+  ],
+  "O3rtEd7aMd": [
+    {
+      "type": 0,
+      "value": "[javascript]Find"
+    }
+  ],
+  "ODySlGptaj": [
+    {
+      "type": 0,
+      "value": "[javascript]Settings…"
+    }
+  ],
+  "P29/Q2jnYR": [
+    {
+      "type": 0,
+      "value": "[javascript]Disable Hardware Acceleration"
+    }
+  ],
+  "PH29MShDiy": [
+    {
+      "type": 0,
+      "value": "[javascript]Forward"
+    }
+  ],
+  "PLekkCVPq/": [
+    {
+      "type": 0,
+      "value": "[javascript]View Process Logs"
+    }
+  ],
+  "PM15jpE/4b": [
+    {
+      "type": 0,
+      "value": "[javascript]This desktop extension will be installed on your computer and made available to Claude."
+    }
+  ],
+  "PW5U8NgTto": [
+    {
+      "type": 0,
+      "value": "[javascript]Open MCP Log File..."
+    }
+  ],
+  "PZtcoAOSsa": [
+    {
+      "type": 0,
+      "value": "[javascript]Don't Enable"
+    }
+  ],
+  "PbJ4jR0kv1": [
+    {
+      "type": 0,
+      "value": "[javascript]You are running the latest version."
+    }
+  ],
+  "PlnPoPqhHR": [
+    {
+      "type": 0,
+      "value": "[javascript]This will delete all application data including settings, cache, and login information. The application will restart after the reset. Are you sure you want to continue?"
+    }
+  ],
+  "Q0f46SlJwJ": [
+    {
+      "type": 0,
+      "value": "[javascript]Extensions"
+    }
+  ],
+  "QR+qh6XJm9": [
+    {
+      "type": 0,
+      "value": "[javascript]Only folders within your home directory can be used. You can select a different folder."
+    }
+  ],
+  "R0/CZEcsoI": [
+    {
+      "type": 0,
+      "value": "[javascript]Redo"
+    }
+  ],
+  "R0eWwXTpvw": [
+    {
+      "type": 0,
+      "value": "[javascript]Skill file not found"
+    }
+  ],
+  "RLUi8uLyg5": [
+    {
+      "type": 0,
+      "value": "[javascript]Cancel"
+    }
+  ],
+  "RTg057HE1D": [
+    {
+      "type": 0,
+      "value": "[javascript]Show Dev Tools"
+    }
+  ],
+  "RwAL0a5BvW": [
+    {
+      "type": 0,
+      "value": "[javascript]Skill file too large"
+    }
+  ],
+  "S3MXlbjkax": [
+    {
+      "type": 0,
+      "value": "[javascript]What can I help you with today?"
+    }
+  ],
+  "S3k5yXss2r": [
+    {
+      "type": 0,
+      "value": "[javascript]Version "
+    },
+    {
+      "type": 1,
+      "value": "version"
+    }
+  ],
+  "ST57NJKyxu": [
+    {
+      "type": 0,
+      "value": "[javascript]Install Unpacked Extension..."
+    }
+  ],
+  "STqYpFr7p4": [
+    {
+      "type": 0,
+      "value": "[javascript]Show All Dev Tools"
+    }
+  ],
+  "TFAn543BGt": [
+    {
+      "type": 0,
+      "value": "[javascript]The application will now restart."
+    }
+  ],
+  "TH+W2Ad73P": [
+    {
+      "type": 0,
+      "value": "[javascript]Cut"
+    }
+  ],
+  "TuYHFkHN2Q": [
+    {
+      "type": 0,
+      "value": "[javascript]Extension Installation Failed"
+    }
+  ],
+  "U3y6ELplAp": [
+    {
+      "type": 0,
+      "value": "[javascript]Show Logs in Explorer"
+    }
+  ],
+  "UJCjEVPX6Q": [
+    {
+      "type": 0,
+      "value": "[javascript]Look Up"
+    }
+  ],
+  "V2UBnWthAZ": [
+    {
+      "type": 0,
+      "value": "[javascript]The application must be restarted for this change to take effect."
+    }
+  ],
+  "VGKaynmhvx": [
+    {
+      "type": 0,
+      "value": "[javascript]You'll need to grant Claude access to your microphone in System Settings."
+    }
+  ],
+  "VT7DsHRYaU": [
+    {
+      "type": 0,
+      "value": "[javascript]Skip This Update"
+    }
+  ],
+  "Vduz6e0uGR": [
+    {
+      "type": 0,
+      "value": "[javascript]Extension Preview Failed"
+    }
+  ],
+  "W1pELwt/+a": [
+    {
+      "type": 0,
+      "value": "[javascript]Claude runs in the Notification Area"
+    }
+  ],
+  "WIua8B+cb8": [
+    {
+      "type": 0,
+      "value": "[javascript]We failed to open a link using your system's default application for this type of link. This is often caused by the default app misbehaving or your operating system refusing the link itself. "
+    },
+    {
+      "type": 1,
+      "value": "url"
+    }
+  ],
+  "WZe86KSdrM": [
+    {
+      "type": 0,
+      "value": "[javascript]Add to dictionary"
+    }
+  ],
+  "WlhIx7DfFO": [
+    {
+      "type": 0,
+      "value": "[javascript]OK"
+    }
+  ],
+  "WtVIeOBH5a": [
+    {
+      "type": 0,
+      "value": "[javascript]Claude Nest has been restricted from accessing the microphone by a system administrator"
+    }
+  ],
+  "WvMIEFradI": [
+    {
+      "type": 0,
+      "value": "[javascript]Copy link"
+    }
+  ],
+  "X59uI0TQ0K": [
+    {
+      "type": 0,
+      "value": "[javascript]The application will now restart."
+    }
+  ],
+  "XPIoFTkh3e": [
+    {
+      "type": 0,
+      "value": "[javascript]No Update Available"
+    }
+  ],
+  "XZ36+EBE5/": [
+    {
+      "type": 0,
+      "value": "[javascript]Zoom Out"
+    }
+  ],
+  "Xda79B7DPP": [
+    {
+      "type": 0,
+      "value": "[javascript]Undo"
+    }
+  ],
+  "XfMPtFNO8C": [
+    {
+      "type": 0,
+      "value": "[javascript]Get support"
+    }
+  ],
+  "XlnflSakbD": [
+    {
+      "type": 0,
+      "value": "[javascript]Error resetting application data"
+    }
+  ],
+  "YBIwRTlH46": [
+    {
+      "type": 0,
+      "value": "[javascript]Reinstall"
+    }
+  ],
+  "YJtjt4jxyX": [
+    {
+      "type": 0,
+      "value": "[javascript]Extensions Disabled"
+    }
+  ],
+  "YxbImDI6tW": [
+    {
+      "type": 0,
+      "value": "[javascript]Select extension"
+    }
+  ],
+  "YyiMc8yeiX": [
+    {
+      "type": 0,
+      "value": "[javascript]Later"
+    }
+  ],
+  "Z0NIdcNF6j": [
+    {
+      "type": 0,
+      "value": "[javascript]Cancel"
+    }
+  ],
+  "Z9g5m/V9Nq": [
+    {
+      "type": 0,
+      "value": "[javascript]Zoom In"
+    }
+  ],
+  "ZJZN1+KyJw": [
+    {
+      "type": 0,
+      "value": "[javascript]Settings..."
+    }
+  ],
+  "ZbNRf7GBxF": [
+    {
+      "type": 0,
+      "value": "[javascript]Clear Cache and Restart"
+    }
+  ],
+  "aDwG4Kb1Ep": [
+    {
+      "type": 0,
+      "value": "[javascript]Extensions"
+    }
+  ],
+  "aM9WCiUXzZ": [
+    {
+      "type": 0,
+      "value": "[javascript]Cowork is not currently supported on "
+    },
+    {
+      "type": 1,
+      "value": "platform"
+    },
+    {
+      "type": 0,
+      "value": " with an "
+    },
+    {
+      "type": 1,
+      "value": "arch"
+    },
+    {
+      "type": 0,
+      "value": " CPU"
+    }
+  ],
+  "aNmxuDcWaU": [
+    {
+      "type": 0,
+      "value": "[javascript]Error"
+    }
+  ],
+  "aXdFLiVzjd": [
+    {
+      "type": 0,
+      "value": "[javascript]Show Main Window"
+    }
+  ],
+  "arbRxbtBkP": [
+    {
+      "type": 0,
+      "value": "[javascript]Back"
+    }
+  ],
+  "b2BK4WgyMA": [
+    {
+      "type": 0,
+      "value": "[javascript]Or, you can turn off Claude's dictation feature to avoid seeing this message when you press your hotkey."
+    }
+  ],
+  "b61SqQEZrX": [
+    {
+      "type": 0,
+      "value": "[javascript]Install Extension?"
+    }
+  ],
+  "baGq3gy8z1": [
+    {
+      "type": 0,
+      "value": "[javascript]New Conversation"
+    }
+  ],
+  "cKXmu20FHh": [
+    {
+      "type": 0,
+      "value": "[javascript]Include session transcript with logs"
+    }
+  ],
+  "dKX0bpR+a2": [
+    {
+      "type": 0,
+      "value": "[javascript]Quit"
+    }
+  ],
+  "dqd8pTrsCB": [
+    {
+      "type": 0,
+      "value": "[javascript]Failed to login, it may have been cancelled"
+    }
+  ],
+  "eNlKc6VorQ": [
+    {
+      "type": 0,
+      "value": "[javascript]Restart Required"
+    }
+  ],
+  "eYYooZJ2Bs": [
+    {
+      "type": 0,
+      "value": "[javascript]Reset Application Data"
+    }
+  ],
+  "ejDvpt5G15": [
+    {
+      "type": 0,
+      "value": "[javascript]Claude is not ready to handle skill files. Try again after the app has fully loaded."
+    }
+  ],
+  "ejZ+goAcuh": [
+    {
+      "type": 0,
+      "value": "[javascript]Organization Extension Update Available"
+    }
+  ],
+  "eovg9YUkde": [
+    {
+      "type": 0,
+      "value": "[javascript]The extension could not be installed. Please ensure the extension folder is valid and try again. The error was: "
+    },
+    {
+      "type": 1,
+      "value": "errorMessage"
+    }
+  ],
+  "fALugGmt33": [
+    {
+      "type": 0,
+      "value": "[javascript]Updates disabled by admin"
+    }
+  ],
+  "fEeEFfSz4K": [
+    {
+      "type": 0,
+      "value": "[javascript]Zoom In (indie cooler version)"
+    }
+  ],
+  "fFJxOwJRj2": [
+    {
+      "type": 0,
+      "value": "[javascript]Undo"
+    }
+  ],
+  "fFcwjFzuez": [
+    {
+      "type": 0,
+      "value": "[javascript]Settings Reset"
+    }
+  ],
+  "fbqQw7UrWt": [
+    {
+      "type": 0,
+      "value": "[javascript]Failed to preview extension."
+    }
+  ],
+  "fkE6LsgdA+": [
+    {
+      "type": 0,
+      "value": "[javascript]This app's file ownership is preventing auto-updates from working smoothly. Claude needs to fix the ownership, which requires administrator access. You'll be prompted for your fingerprint or password."
+    }
+  ],
+  "g4RGEh4EaI": [
+    {
+      "type": 0,
+      "value": "[javascript]No manifest.json found in extension file"
+    }
+  ],
+  "gX/JCYf2fo": [
+    {
+      "type": 0,
+      "value": "[javascript]Cowork is not currently supported on "
+    },
+    {
+      "type": 1,
+      "value": "platform"
+    }
+  ],
+  "gpA1MSXiXq": [
+    {
+      "type": 0,
+      "value": "[javascript]The extension directory has been disabled on your computer."
+    }
+  ],
+  "grarAzxOkG": [
+    {
+      "type": 0,
+      "value": "[javascript]Select All"
+    }
+  ],
+  "h2/d8qB672": [
+    {
+      "type": 0,
+      "value": "[javascript]OK"
+    }
+  ],
+  "hKoMFC5IFq": [
+    {
+      "type": 0,
+      "value": "[javascript]Select Extension Folder"
+    }
+  ],
+  "hZ9MEsSHoK": [
+    {
+      "type": 0,
+      "value": "[javascript]Install Extension..."
+    }
+  ],
+  "hzKMHWvM80": [
+    {
+      "type": 0,
+      "value": "[javascript]Restart to update to "
+    },
+    {
+      "type": 1,
+      "value": "updateVersion"
+    }
+  ],
+  "i6wCMcpNrS": [
+    {
+      "type": 0,
+      "value": "[javascript]You've used "
+    },
+    {
+      "type": 1,
+      "value": "key"
+    },
+    {
+      "type": 0,
+      "value": " to speak to Claude, but Claude needs microphone permission."
+    }
+  ],
+  "iFRmqBsr1N": [
+    {
+      "type": 0,
+      "value": "[javascript]About Claude"
+    }
+  ],
+  "iSj8sZcXxp": [
+    {
+      "type": 0,
+      "value": "[javascript]Cache cleared successfully"
+    }
+  ],
+  "iXTDYY7Kqi": [
+    {
+      "type": 0,
+      "value": "[javascript]Show Logs in File Manager"
+    }
+  ],
+  "ilE9e0uxNN": [
+    {
+      "type": 0,
+      "value": "[javascript]Refresh"
+    }
+  ],
+  "j66cdL4EK5": [
+    {
+      "type": 0,
+      "value": "[javascript]Open Documentation"
+    }
+  ],
+  "jOY1Gy+4Ti": [
+    {
+      "type": 0,
+      "value": "[javascript]Cowork requires macOS 14.0 (Sonoma) or later. Update your operating system to use this feature."
+    }
+  ],
+  "jpjbvS12R7": [
+    {
+      "type": 0,
+      "value": "[javascript]Load Local Claude.ai"
+    }
+  ],
+  "k9Ayptus7s": [
+    {
+      "type": 0,
+      "value": "[javascript]Reset"
+    }
+  ],
+  "kEsl25nlp0": [
+    {
+      "type": 0,
+      "value": "[javascript]Prototypes"
+    }
+  ],
+  "kFZ7xboYEB": [
+    {
+      "type": 0,
+      "value": "[javascript]You have disabled Cowork"
+    }
+  ],
+  "l+YNRZY/eS": [
+    {
+      "type": 0,
+      "value": "[javascript]This will open your default email application to compose a message to "
+    },
+    {
+      "type": 1,
+      "value": "email"
+    },
+    {
+      "type": 0,
+      "value": "."
+    }
+  ],
+  "l6/rglN9Fm": [
+    {
+      "type": 0,
+      "value": "[javascript]Copy URL"
+    }
+  ],
+  "l9MtS7TzCl": [
+    {
+      "type": 0,
+      "value": "[javascript]This desktop extension will be installed on your computer. In order to install this extension we need to fetch a few dependencies. This may take a few minutes."
+    }
+  ],
+  "lHUUJjwou0": [
+    {
+      "type": 0,
+      "value": "[javascript]Reset complete"
+    }
+  ],
+  "lQXxJomNoi": [
+    {
+      "type": 0,
+      "value": "[javascript]Not now"
+    }
+  ],
+  "lT2QKmzm+2": [
+    {
+      "type": 0,
+      "value": "[javascript]Error deleting VM sessions"
+    }
+  ],
+  "m3GfpKD1WX": [
+    {
+      "type": 0,
+      "value": "[javascript]Reload"
+    }
+  ],
+  "m6UMGDluaq": [
+    {
+      "type": 0,
+      "value": "[javascript]Copy Image Address"
+    }
+  ],
+  "mCXNyEdJat": [
+    {
+      "type": 0,
+      "value": "[javascript]Copied version to clipboard"
+    }
+  ],
+  "mDdef8+NGs": [
+    {
+      "type": 0,
+      "value": "[javascript]Last update attempt failed..."
+    }
+  ],
+  "mHe7uc8Zg3": [
+    {
+      "type": 0,
+      "value": "[javascript]Submit Feedback"
+    }
+  ],
+  "mRXjxhS6p4": [
+    {
+      "type": 0,
+      "value": "[javascript]Check for Updates…"
+    }
+  ],
+  "mamRHI1kFH": [
+    {
+      "type": 0,
+      "value": "[javascript]Learn more"
+    }
+  ],
+  "mhc+Y6yjMO": [
+    {
+      "type": 0,
+      "value": "[javascript]Copy Link Address"
+    }
+  ],
+  "mnsztLoDNZ": [
+    {
+      "type": 0,
+      "value": "[javascript]Open Settings"
+    }
+  ],
+  "mtAOMWDDTh": [
+    {
+      "type": 0,
+      "value": "[javascript]Claude will have read and write access to files in "
+    },
+    {
+      "type": 1,
+      "value": "path"
+    },
+    {
+      "type": 0,
+      "value": "."
+    }
+  ],
+  "nQR7K3Z4D5": [
+    {
+      "type": 0,
+      "value": "[javascript]Install Claude in Chrome"
+    }
+  ],
+  "ncNfeM+qq2": [
+    {
+      "type": 0,
+      "value": "[javascript]Don't ask again"
+    }
+  ],
+  "ngLpGT7bUJ": [
+    {
+      "type": 0,
+      "value": "[javascript]Could not load developer settings"
+    }
+  ],
+  "oINGaIFgG6": [
+    {
+      "type": 0,
+      "value": "[javascript]Open Extension Settings Folder..."
+    }
+  ],
+  "oLoNQiXuqZ": [
+    {
+      "type": 0,
+      "value": "[javascript]Check your Claude in Chrome account"
+    }
+  ],
+  "oQuOiX24pp": [
+    {
+      "type": 0,
+      "value": "[javascript]Quit"
+    }
+  ],
+  "odvvwvsA/1": [
+    {
+      "type": 0,
+      "value": "[javascript]Allow Claude to cowork in "
+    },
+    {
+      "type": 1,
+      "value": "path"
+    },
+    {
+      "type": 0,
+      "value": "?"
+    }
+  ],
+  "of/TiVeRBb": [
+    {
+      "type": 0,
+      "value": "[javascript]This will delete and re-download your workspace. Your existing session data will be preserved."
+    }
+  ],
+  "oqcioCyuAP": [
+    {
+      "type": 0,
+      "value": "[javascript]Claude's installation appears to be corrupted. Reinstall Claude from claude.com/download to use this feature."
+    }
+  ],
+  "pQjpVULNUK": [
+    {
+      "type": 0,
+      "value": "[javascript]Fix ownership"
+    }
+  ],
+  "pWLdTcEuat": [
+    {
+      "type": 0,
+      "value": "[javascript]Open Chrome Web Store"
+    }
+  ],
+  "pWXxZASpOB": [
+    {
+      "type": 0,
+      "value": "[javascript]Help"
+    }
+  ],
+  "pz9fNjr/Ms": [
+    {
+      "type": 0,
+      "value": "[javascript]Install Update"
+    }
+  ],
+  "q4hs14B00V": [
+    {
+      "type": 0,
+      "value": "[javascript]Unknown error"
+    }
+  ],
+  "qG7v6CGR4F": [
+    {
+      "type": 0,
+      "value": "[javascript]Downloading Update..."
+    }
+  ],
+  "qKeKrKCSD+": [
+    {
+      "type": 0,
+      "value": "[javascript]MCP Configuration Reload Failed"
+    }
+  ],
+  "qz9XeGmw0N": [
+    {
+      "type": 0,
+      "value": "[javascript]Cancel"
+    }
+  ],
+  "r/37cmiGuE": [
+    {
+      "type": 0,
+      "value": "[javascript]Cannot open skill"
+    }
+  ],
+  "rCO+ULu7rr": [
+    {
+      "type": 0,
+      "value": "[javascript]Extension "
+    },
+    {
+      "type": 1,
+      "value": "extensionId"
+    },
+    {
+      "type": 0,
+      "value": " is blocked by a security blocklist: "
+    },
+    {
+      "type": 1,
+      "value": "reason"
+    }
+  ],
+  "rNAd+HxSK4": [
+    {
+      "type": 0,
+      "value": "[javascript]Open MCP Log File"
+    }
+  ],
+  "rNxkVelwuD": [
+    {
+      "type": 0,
+      "value": "[javascript]Could not open the specified folder."
+    }
+  ],
+  "rY99UXvTDU": [
+    {
+      "type": 0,
+      "value": "[javascript]Copy Image"
+    }
+  ],
+  "rdiPpQVqvY": [
+    {
+      "type": 0,
+      "value": "[javascript]Developer mode allows access to developer tools and debugging features. Only enable this if you know what you're doing."
+    }
+  ],
+  "rwFEudHXey": [
+    {
+      "type": 0,
+      "value": "[javascript]There was an error reading or parsing claude_desktop_config.json: "
+    },
+    {
+      "type": 1,
+      "value": "error"
+    }
+  ],
+  "s7EJA5V2XI": [
+    {
+      "type": 0,
+      "value": "[javascript]Version "
+    },
+    {
+      "type": 1,
+      "value": "currentVersion"
+    },
+    {
+      "type": 0,
+      "value": " → "
+    },
+    {
+      "type": 1,
+      "value": "newVersion"
+    },
+    {
+      "type": 0,
+      "value": " Would you like to install this update?"
+    }
+  ],
+  "s9613Wd32V": [
+    {
+      "type": 0,
+      "value": "[javascript]Error Opening Folder"
+    }
+  ],
+  "sLqBzYBjWk": [
+    {
+      "type": 0,
+      "value": "[javascript]You'll need to grant Claude access to your microphone in System Settings."
+    }
+  ],
+  "sNnRQsIEYz": [
+    {
+      "type": 0,
+      "value": "[javascript]Find in page"
+    }
+  ],
+  "sNotLv3TK+": [
+    {
+      "type": 0,
+      "value": "[javascript]Code"
+    }
+  ],
+  "sRcCpOpu8r": [
+    {
+      "type": 0,
+      "value": "[javascript]Allow Claude to use "
+    },
+    {
+      "type": 1,
+      "value": "toolName"
+    },
+    {
+      "type": 0,
+      "value": "?"
+    }
+  ],
+  "sUQ9/bNl4T": [
+    {
+      "type": 0,
+      "value": "[javascript]Fix required for auto-updates"
+    }
+  ],
+  "sWuWveHruj": [
+    {
+      "type": 0,
+      "value": "[javascript]Error deleting VM bundle"
+    }
+  ],
+  "sfX/GDKSJS": [
+    {
+      "type": 0,
+      "value": "[javascript]OK"
+    }
+  ],
+  "sxmY1kIQyH": [
+    {
+      "type": 0,
+      "value": "[javascript]Delete Cowork VM Bundle and Restart…"
+    }
+  ],
+  "tBeSdR33YY": [
+    {
+      "type": 0,
+      "value": "[javascript]About Claude"
+    }
+  ],
+  "tGP7K8z3w7": [
+    {
+      "type": 0,
+      "value": "[javascript]Caps Lock"
+    }
+  ],
+  "tWutslc/9Z": [
+    {
+      "type": 0,
+      "value": "[javascript]Enable"
+    }
+  ],
+  "tcCGfV4kUw": [
+    {
+      "type": 0,
+      "value": "[javascript]This will stop any running VM sessions, delete all local agent mode session data, and restart the app. This action cannot be undone. Are you sure you want to continue?"
+    }
+  ],
+  "tdoSuxb1IL": [
+    {
+      "type": 0,
+      "value": "[javascript]The extension could not be installed due to the following error: "
+    },
+    {
+      "type": 1,
+      "value": "errorMessage"
+    }
+  ],
+  "to40hXUNmk": [
+    {
+      "type": 0,
+      "value": "[javascript]Get Support"
+    }
+  ],
+  "tsxOTfL/Of": [
+    {
+      "type": 0,
+      "value": "[javascript]Some folders were skipped"
+    }
+  ],
+  "uCuWiNkafs": [
+    {
+      "type": 0,
+      "value": "[javascript]Install"
+    }
+  ],
+  "uKCcuVd1Yt": [
+    {
+      "type": 0,
+      "value": "[javascript]Reload MCP Configuration"
+    }
+  ],
+  "uc3dnSo+eo": [
+    {
+      "type": 0,
+      "value": "[javascript]File"
+    }
+  ],
+  "vBHxgwQGGk": [
+    {
+      "type": 0,
+      "value": "[javascript]Your settings file was corrupted and has been reset to defaults. You may need to reconfigure your preferences."
+    }
+  ],
+  "vTbKXLJZxV": [
+    {
+      "type": 0,
+      "value": "[javascript]The selected folder is outside your home directory."
+    }
+  ],
+  "vgLHPxjh9O": [
+    {
+      "type": 0,
+      "value": "[javascript]Enable Developer Mode"
+    }
+  ],
+  "vogrtr3KsQ": [
+    {
+      "type": 0,
+      "value": "[javascript]Copy Installation ID"
+    }
+  ],
+  "vzhC36mVND": [
+    {
+      "type": 0,
+      "value": "[javascript]Would you like to submit your issue with debug logs? Submitting your issue with logs will send system information to Anthropic for debugging and future improvements to our models."
+    }
+  ],
+  "wj7AWpPq6R": [
+    {
+      "type": 0,
+      "value": "[javascript]This will stop any running VM sessions, delete the VM bundle files, and restart the app. The bundle will be re-downloaded the next time you use the VM. Are you sure you want to continue?"
+    }
+  ],
+  "wkjvJ1mzSN": [
+    {
+      "type": 0,
+      "value": "[javascript]Invalid Folder Selection"
+    }
+  ],
+  "xJs1jZ8PoA": [
+    {
+      "type": 0,
+      "value": "[javascript]Claude runs in the background even when you close the window. Click the Claude icon in the tray to reopen the app, or right-click to quit."
+    }
+  ],
+  "xUWKTVQzGH": [
+    {
+      "type": 0,
+      "value": "[javascript]That feature change requires an app restart to take effect."
+    }
+  ],
+  "xd436TVDRZ": [
+    {
+      "type": 0,
+      "value": "[javascript]There was an error reading or parsing developer_settings.json: "
+    },
+    {
+      "type": 1,
+      "value": "error"
+    }
+  ],
+  "xiNOx2x9zT": [
+    {
+      "type": 0,
+      "value": "[javascript]Open email link?"
+    }
+  ],
+  "y9tCbmRzHN": [
+    {
+      "type": 0,
+      "value": "[javascript]Enable Developer Mode?"
+    }
+  ],
+  "ytEQo80lWc": [
+    {
+      "type": 0,
+      "value": "[javascript]Reset App Data…"
+    }
+  ],
+  "ytjMRobdyL": [
+    {
+      "type": 0,
+      "value": "[javascript]Update Available"
+    }
+  ],
+  "yxDdMS8KTw": [
+    {
+      "type": 0,
+      "value": "[javascript]App Features"
+    }
+  ],
+  "z0kEdJ2iRu": [
+    {
+      "type": 0,
+      "value": "[javascript]Restart"
+    }
+  ],
+  "zAYm/Z684h": [
+    {
+      "type": 0,
+      "value": "[javascript]Help"
+    }
+  ],
+  "ze7mxSJ8h8": [
+    {
+      "type": 0,
+      "value": "[javascript]Open"
+    }
+  ]
+}
