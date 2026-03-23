@@ -1,0 +1,1868 @@
+{
+  "+/cwsayrqk": [
+    {
+      "type": 0,
+      "value": "Actual SizeSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "+7sd9hoyZA": [
+    {
+      "type": 0,
+      "value": "CopySSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "+NwlCZ9GfR": [
+    {
+      "type": 0,
+      "value": "You are not logged in. Please log in to access the extensions directory.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "/PgA81GVOD": [
+    {
+      "type": 0,
+      "value": "EditSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "/bRGKhnXQ6": [
+    {
+      "type": 0,
+      "value": "A new version is available. It will be downloaded and installed automatically.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "06KK1e0srf": [
+    {
+      "type": 0,
+      "value": "The ownership fix didn't complete. Auto-updates may not work until this is resolved. You can try again next time.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "0GT0SIETlE": [
+    {
+      "type": 0,
+      "value": "CancelSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "0NmcPHSn/L": [
+    {
+      "type": 0,
+      "value": "Ownership fix failedSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "0eJo9Vzuvt": [
+    {
+      "type": 0,
+      "value": "Trust "
+    },
+    {
+      "type": 1,
+      "value": "cwd"
+    },
+    {
+      "type": 0,
+      "value": " and start a code session?SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "0tZLEYF8mJ": [
+    {
+      "type": 0,
+      "value": "DeveloperSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "0vttuC3ieI": [
+    {
+      "type": 0,
+      "value": "Load Remote Claude.aiSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "1HUTYwndT2": [
+    {
+      "type": 0,
+      "value": "WindowSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "1nSZez10qJ": [
+    {
+      "type": 0,
+      "value": "Failed to preview extensionSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "1o7ejsqYGi": [
+    {
+      "type": 0,
+      "value": "Extension installation failedSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "2/2BMRHIA/": [
+    {
+      "type": 0,
+      "value": "DebugSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "2OTyZOnjhc": [
+    {
+      "type": 0,
+      "value": "The extension could not be previewed due to the following error. Please ensure the DXT file is valid and try again. "
+    },
+    {
+      "type": 1,
+      "value": "errorMessage"
+    },
+    {
+      "type": 0,
+      "value": "SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "2Spx55hKaC": [
+    {
+      "type": 0,
+      "value": "This feature requires macOS 13.0 or higherSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "2cplZXFjPL": [
+    {
+      "type": 0,
+      "value": "Reinstall workspaceSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "38E9oKs/ky": [
+    {
+      "type": 0,
+      "value": "Delete Cowork VM Sessions and Restart…SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "39r88rYBHt": [
+    {
+      "type": 0,
+      "value": "Submit Feedback - ClaudeSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "3FWTqed5/h": [
+    {
+      "type": 0,
+      "value": "Open Link in BrowserSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "3ML3xT+gEV": [
+    {
+      "type": 0,
+      "value": "RedoSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "3unrKzH4zB": [
+    {
+      "type": 0,
+      "value": "CopySSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "4G+5nA56fK": [
+    {
+      "type": 0,
+      "value": "Cowork has been disabled by your organization administratorSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "4KjH9o80Fc": [
+    {
+      "type": 0,
+      "value": "Checking for Updates...SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "4MLbtbVfJv": [
+    {
+      "type": 0,
+      "value": "CutSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "4R0oWVuAfJ": [
+    {
+      "type": 0,
+      "value": "Not nowSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "4XmExNuKUb": [
+    {
+      "type": 0,
+      "value": "TroubleshootingSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "4wArDWCxOC": [
+    {
+      "type": 0,
+      "value": "Delete VM Sessions and RestartSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "5ASYey6oV6": [
+    {
+      "type": 0,
+      "value": "Install and restart ChromeSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "5DUIVR3fVi": [
+    {
+      "type": 0,
+      "value": "About...SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "5d9BF195un": [
+    {
+      "type": 0,
+      "value": "Restart ChromeSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "5fDh29sjSc": [
+    {
+      "type": 0,
+      "value": "Failed to reload MCP configuration. Please check the logs for more details.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "6Blr2N4E48": [
+    {
+      "type": 0,
+      "value": "Delete and RestartSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "6yMDaC30L4": [
+    {
+      "type": 0,
+      "value": "This extension requires a valid signatureSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "6yv8ytK4El": [
+    {
+      "type": 0,
+      "value": "Check your network connectionSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "7Arh/jSQPF": [
+    {
+      "type": 0,
+      "value": "This will open "
+    },
+    {
+      "type": 1,
+      "value": "appName"
+    },
+    {
+      "type": 0,
+      "value": " to compose a message to "
+    },
+    {
+      "type": 1,
+      "value": "email"
+    },
+    {
+      "type": 0,
+      "value": ".SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "7BkU20KRFT": [
+    {
+      "type": 0,
+      "value": "Cowork requires Windows 10 build 2004 or later. Update your operating system to use this feature.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "7DG1YUwIAv": [
+    {
+      "type": 0,
+      "value": "Enable Cowork VM Debug LoggingSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "7G27hVrdBJ": [
+    {
+      "type": 0,
+      "value": "InstallSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "7fdcqxofEs": [
+    {
+      "type": 0,
+      "value": "ExitSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "7uauQ/gScy": [
+    {
+      "type": 0,
+      "value": "Only folders within your home directory can be used. "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 7
+            },
+            {
+              "type": 0,
+              "value": " folder was"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 7
+            },
+            {
+              "type": 0,
+              "value": " folders were"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "skipped"
+    },
+    {
+      "type": 0,
+      "value": " skipped.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "82jNv3f0M7": [
+    {
+      "type": 0,
+      "value": "Learn SpellingSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "8ABQf0B1B0": [
+    {
+      "type": 0,
+      "value": "PreviewSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "8Ru8/2NkQP": [
+    {
+      "type": 0,
+      "value": "Extension preview failedSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "8W7dNhwk37": [
+    {
+      "type": 1,
+      "value": "extensionDetails"
+    },
+    {
+      "type": 0,
+      "value": " These extensions will remain installed and can be re-enabled if you switch to an organization where they are allowed. You can also delete them from Settings.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "8YQEOfuaGO": [
+    {
+      "type": 0,
+      "value": "Select AllSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "9+afSO9e/t": [
+    {
+      "type": 0,
+      "value": "Failed to check for updates: "
+    },
+    {
+      "type": 1,
+      "value": "error"
+    },
+    {
+      "type": 0,
+      "value": "SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "9DyIMdlUEL": [
+    {
+      "type": 0,
+      "value": "Error accessing logsSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "9OBj0jX9+a": [
+    {
+      "type": 0,
+      "value": "Link couldn't be openedSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "9OFtp2pNVO": [
+    {
+      "type": 0,
+      "value": "CancelSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "9aJv5Q6PQw": [
+    {
+      "type": 0,
+      "value": "Skip feedback and reinstallSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "9r3qRuB970": [
+    {
+      "type": 0,
+      "value": "Would you like to submit your issue with debug logs? Submitting your issue with logs will send the entire current conversation as well as system information to Anthropic for debugging and future improvements to our models.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "AAoe5u9j1e": [
+    {
+      "type": 0,
+      "value": "Do you want to install "
+    },
+    {
+      "type": 1,
+      "value": "extensionName"
+    },
+    {
+      "type": 0,
+      "value": "?SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "AikjBHvhjy": [
+    {
+      "type": 0,
+      "value": "Login to Claude in ChromeSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "AtL30+PDZZ": [
+    {
+      "type": 0,
+      "value": "Claude needs microphone permissionSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "C/K/kK/zlp": [
+    {
+      "type": 0,
+      "value": "Cowork requires virtualization. Your Mac does not support virtualization. If you are currently running macOS inside a virtual machine (like Parallels), you might need to enable a feature called 'nested virtualization'.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "CDnvwxVwpJ": [
+    {
+      "type": 0,
+      "value": "The following extensions have been disabled because they are not allowed in your current organization:SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "CizRPROPWo": [
+    {
+      "type": 0,
+      "value": "Claude HelpSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "CspaHtRhfg": [
+    {
+      "type": 0,
+      "value": "Open Extensions Folder...SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "D0sIyzNO/8": [
+    {
+      "type": 0,
+      "value": "The Chrome extension needs to be signed in with the same account as Claude Desktop ("
+    },
+    {
+      "type": 1,
+      "value": "email"
+    },
+    {
+      "type": 0,
+      "value": "). Open the extension, sign in if needed, and make sure the accounts match. If you've just installed the extension, try restarting Chrome.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "D4DyT6MmPy": [
+    {
+      "type": 0,
+      "value": "Could not load app settingsSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "DPsM7/BhfA": [
+    {
+      "type": 0,
+      "value": "Show Logs in FinderSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "DQTgg21B7g": [
+    {
+      "type": 0,
+      "value": "Show AppSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "Drf4+ubb3h": [
+    {
+      "type": 0,
+      "value": "Make sure you are signed in to Claude in Chrome with the same account as Claude Desktop.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "EfdnINFnIz": [
+    {
+      "type": 0,
+      "value": "FileSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "EmeqFY8DA1": [
+    {
+      "type": 0,
+      "value": "Cowork requires Claude Desktop be installed with our modern installerSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "FQTy8EJmqH": [
+    {
+      "type": 0,
+      "value": "Open Extension SettingsSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "HOyJhbAD40": [
+    {
+      "type": 0,
+      "value": "Restart NowSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "HQ9fMJxTjW": [
+    {
+      "type": 0,
+      "value": "Cowork is not currently supported on Windows on Arm. Coming Soon.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "HmOsjnFwIk": [
+    {
+      "type": 0,
+      "value": "The extension "
+    },
+    {
+      "type": 1,
+      "value": "extensionName"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "organizationText"
+    },
+    {
+      "type": 0,
+      "value": " has an update available.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "IsRn01mSn6": [
+    {
+      "type": 0,
+      "value": "Do not attach logsSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "JOISpUWyGN": [
+    {
+      "type": 0,
+      "value": "The skill file could not be found.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "JOf7G+dCf1": [
+    {
+      "type": 0,
+      "value": "Open App Config File...SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "JVwNvMZjVT": [
+    {
+      "type": 0,
+      "value": "PasteSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "JdZ6sg/SPx": [
+    {
+      "type": 0,
+      "value": "Submit Feedback and Reinstall WorkspaceSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "JlcyIK3E4r": [
+    {
+      "type": 0,
+      "value": "Delete VM Bundle and RestartSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "JqJWa8ljgB": [
+    {
+      "type": 0,
+      "value": "Claude will have read and write access to this folder. It will also be trusted in the Code tab.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "K5GtyaPaw/": [
+    {
+      "type": 0,
+      "value": "Open Developer Config File...SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "KAo3lt5Hv+": [
+    {
+      "type": 0,
+      "value": "PasteSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "KETtxy51p+": [
+    {
+      "type": 0,
+      "value": "Inspect ElementSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "KUGSi676tz": [
+    {
+      "type": 0,
+      "value": "Failed to install extensionSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "KUSSz7hnrh": [
+    {
+      "type": 0,
+      "value": "Skill file errorSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "KeAjLbyOJs": [
+    {
+      "type": 0,
+      "value": "The Chrome extension needs to be signed in with the same account as Claude Desktop. Open the extension, sign in if needed, and make sure the accounts match. If you've just installed the extension, try restarting Chrome.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "Ko/2Ml7mZG": [
+    {
+      "type": 0,
+      "value": "Reload This PageSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "L7zYnb34AH": [
+    {
+      "type": 0,
+      "value": "Error clearing cacheSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "LCWUQ/4Fu6": [
+    {
+      "type": 0,
+      "value": "ViewSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "LN5XCdewH0": [
+    {
+      "type": 0,
+      "value": "This allows Claude to work with websites directly in your browser. Only grant \"always allow\" for sites you trust.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "LShRh03tIJ": [
+    {
+      "type": 0,
+      "value": "Record Net Log (30s)SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "Lw6AWRo971": [
+    {
+      "type": 0,
+      "value": "Skill file is too large. Maximum size is 30 MB.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "MNF5cWO3lm": [
+    {
+      "type": 0,
+      "value": "from your organizationSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "MVVosgIfRl": [
+    {
+      "type": 0,
+      "value": "Attach logsSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "MpGNf3UQ/u": [
+    {
+      "type": 0,
+      "value": "Failed to open skill file.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "N3XFOdWdG+": [
+    {
+      "type": 0,
+      "value": "Claude Code for Desktop has been disabled by your organization administratorSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "NNEmTvq77p": [
+    {
+      "type": 0,
+      "value": "from "
+    },
+    {
+      "type": 1,
+      "value": "orgName"
+    },
+    {
+      "type": 0,
+      "value": "SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "Nmvo1ufAY5": [
+    {
+      "type": 0,
+      "value": "Couldn't connect to ClaudeSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "NoMbiF3ygy": [
+    {
+      "type": 0,
+      "value": "This feature requires macOS 14.0 or higherSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "O3rtEd7aMd": [
+    {
+      "type": 0,
+      "value": "FindSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "ODySlGptaj": [
+    {
+      "type": 0,
+      "value": "Settings…SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "P29/Q2jnYR": [
+    {
+      "type": 0,
+      "value": "Disable Hardware AccelerationSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "PH29MShDiy": [
+    {
+      "type": 0,
+      "value": "ForwardSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "PLekkCVPq/": [
+    {
+      "type": 0,
+      "value": "View Process LogsSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "PM15jpE/4b": [
+    {
+      "type": 0,
+      "value": "This desktop extension will be installed on your computer and made available to Claude.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "PW5U8NgTto": [
+    {
+      "type": 0,
+      "value": "Open MCP Log File...SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "PZtcoAOSsa": [
+    {
+      "type": 0,
+      "value": "Don't EnableSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "PbJ4jR0kv1": [
+    {
+      "type": 0,
+      "value": "You are running the latest version.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "PlnPoPqhHR": [
+    {
+      "type": 0,
+      "value": "This will delete all application data including settings, cache, and login information. The application will restart after the reset. Are you sure you want to continue?SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "Q0f46SlJwJ": [
+    {
+      "type": 0,
+      "value": "ExtensionsSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "QR+qh6XJm9": [
+    {
+      "type": 0,
+      "value": "Only folders within your home directory can be used. You can select a different folder.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "R0/CZEcsoI": [
+    {
+      "type": 0,
+      "value": "RedoSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "R0eWwXTpvw": [
+    {
+      "type": 0,
+      "value": "Skill file not foundSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "RLUi8uLyg5": [
+    {
+      "type": 0,
+      "value": "CancelSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "RTg057HE1D": [
+    {
+      "type": 0,
+      "value": "Show Dev ToolsSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "RwAL0a5BvW": [
+    {
+      "type": 0,
+      "value": "Skill file too largeSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "S3MXlbjkax": [
+    {
+      "type": 0,
+      "value": "What can I help you with today?SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "S3k5yXss2r": [
+    {
+      "type": 0,
+      "value": "Version "
+    },
+    {
+      "type": 1,
+      "value": "version"
+    },
+    {
+      "type": 0,
+      "value": "SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "ST57NJKyxu": [
+    {
+      "type": 0,
+      "value": "Install Unpacked Extension...SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "STqYpFr7p4": [
+    {
+      "type": 0,
+      "value": "Show All Dev ToolsSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "TFAn543BGt": [
+    {
+      "type": 0,
+      "value": "The application will now restart.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "TH+W2Ad73P": [
+    {
+      "type": 0,
+      "value": "CutSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "TuYHFkHN2Q": [
+    {
+      "type": 0,
+      "value": "Extension Installation FailedSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "U3y6ELplAp": [
+    {
+      "type": 0,
+      "value": "Show Logs in ExplorerSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "UJCjEVPX6Q": [
+    {
+      "type": 0,
+      "value": "Look UpSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "V2UBnWthAZ": [
+    {
+      "type": 0,
+      "value": "The application must be restarted for this change to take effect.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "VGKaynmhvx": [
+    {
+      "type": 0,
+      "value": "You'll need to grant Claude access to your microphone in System Settings.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "VT7DsHRYaU": [
+    {
+      "type": 0,
+      "value": "Skip This UpdateSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "Vduz6e0uGR": [
+    {
+      "type": 0,
+      "value": "Extension Preview FailedSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "W1pELwt/+a": [
+    {
+      "type": 0,
+      "value": "Claude runs in the Notification AreaSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "WIua8B+cb8": [
+    {
+      "type": 0,
+      "value": "We failed to open a link using your system's default application for this type of link. This is often caused by the default app misbehaving or your operating system refusing the link itself. "
+    },
+    {
+      "type": 1,
+      "value": "url"
+    },
+    {
+      "type": 0,
+      "value": "SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "WZe86KSdrM": [
+    {
+      "type": 0,
+      "value": "Add to dictionarySSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "WlhIx7DfFO": [
+    {
+      "type": 0,
+      "value": "OKSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "WtVIeOBH5a": [
+    {
+      "type": 0,
+      "value": "Claude Nest has been restricted from accessing the microphone by a system administratorSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "WvMIEFradI": [
+    {
+      "type": 0,
+      "value": "Copy linkSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "X59uI0TQ0K": [
+    {
+      "type": 0,
+      "value": "The application will now restart.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "XPIoFTkh3e": [
+    {
+      "type": 0,
+      "value": "No Update AvailableSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "XZ36+EBE5/": [
+    {
+      "type": 0,
+      "value": "Zoom OutSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "Xda79B7DPP": [
+    {
+      "type": 0,
+      "value": "UndoSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "XfMPtFNO8C": [
+    {
+      "type": 0,
+      "value": "Get supportSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "XlnflSakbD": [
+    {
+      "type": 0,
+      "value": "Error resetting application dataSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "YBIwRTlH46": [
+    {
+      "type": 0,
+      "value": "ReinstallSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "YJtjt4jxyX": [
+    {
+      "type": 0,
+      "value": "Extensions DisabledSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "YxbImDI6tW": [
+    {
+      "type": 0,
+      "value": "Select extensionSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "YyiMc8yeiX": [
+    {
+      "type": 0,
+      "value": "LaterSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "Z0NIdcNF6j": [
+    {
+      "type": 0,
+      "value": "CancelSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "Z9g5m/V9Nq": [
+    {
+      "type": 0,
+      "value": "Zoom InSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "ZJZN1+KyJw": [
+    {
+      "type": 0,
+      "value": "Settings...SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "ZbNRf7GBxF": [
+    {
+      "type": 0,
+      "value": "Clear Cache and RestartSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "aDwG4Kb1Ep": [
+    {
+      "type": 0,
+      "value": "ExtensionsSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "aM9WCiUXzZ": [
+    {
+      "type": 0,
+      "value": "Cowork is not currently supported on "
+    },
+    {
+      "type": 1,
+      "value": "platform"
+    },
+    {
+      "type": 0,
+      "value": " with an "
+    },
+    {
+      "type": 1,
+      "value": "arch"
+    },
+    {
+      "type": 0,
+      "value": " CPUSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "aNmxuDcWaU": [
+    {
+      "type": 0,
+      "value": "ErrorSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "aXdFLiVzjd": [
+    {
+      "type": 0,
+      "value": "Show Main WindowSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "arbRxbtBkP": [
+    {
+      "type": 0,
+      "value": "BackSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "b2BK4WgyMA": [
+    {
+      "type": 0,
+      "value": "Or, you can turn off Claude's dictation feature to avoid seeing this message when you press your hotkey.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "b61SqQEZrX": [
+    {
+      "type": 0,
+      "value": "Install Extension?SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "baGq3gy8z1": [
+    {
+      "type": 0,
+      "value": "New ConversationSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "cKXmu20FHh": [
+    {
+      "type": 0,
+      "value": "Include session transcript with logsSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "dKX0bpR+a2": [
+    {
+      "type": 0,
+      "value": "QuitSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "dqd8pTrsCB": [
+    {
+      "type": 0,
+      "value": "Failed to login, it may have been cancelledSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "eNlKc6VorQ": [
+    {
+      "type": 0,
+      "value": "Restart RequiredSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "eYYooZJ2Bs": [
+    {
+      "type": 0,
+      "value": "Reset Application DataSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "ejDvpt5G15": [
+    {
+      "type": 0,
+      "value": "Claude is not ready to handle skill files. Try again after the app has fully loaded.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "ejZ+goAcuh": [
+    {
+      "type": 0,
+      "value": "Organization Extension Update AvailableSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "eovg9YUkde": [
+    {
+      "type": 0,
+      "value": "The extension could not be installed. Please ensure the extension folder is valid and try again. The error was: "
+    },
+    {
+      "type": 1,
+      "value": "errorMessage"
+    },
+    {
+      "type": 0,
+      "value": "SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "fALugGmt33": [
+    {
+      "type": 0,
+      "value": "Updates disabled by adminSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "fEeEFfSz4K": [
+    {
+      "type": 0,
+      "value": "Zoom In (indie cooler version)SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "fFJxOwJRj2": [
+    {
+      "type": 0,
+      "value": "UndoSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "fFcwjFzuez": [
+    {
+      "type": 0,
+      "value": "Settings ResetSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "fbqQw7UrWt": [
+    {
+      "type": 0,
+      "value": "Failed to preview extension.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "fkE6LsgdA+": [
+    {
+      "type": 0,
+      "value": "This app's file ownership is preventing auto-updates from working smoothly. Claude needs to fix the ownership, which requires administrator access. You'll be prompted for your fingerprint or password.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "g4RGEh4EaI": [
+    {
+      "type": 0,
+      "value": "No manifest.json found in extension fileSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "gX/JCYf2fo": [
+    {
+      "type": 0,
+      "value": "Cowork is not currently supported on "
+    },
+    {
+      "type": 1,
+      "value": "platform"
+    },
+    {
+      "type": 0,
+      "value": "SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "gpA1MSXiXq": [
+    {
+      "type": 0,
+      "value": "The extension directory has been disabled on your computer.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "grarAzxOkG": [
+    {
+      "type": 0,
+      "value": "Select AllSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "h2/d8qB672": [
+    {
+      "type": 0,
+      "value": "OKSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "hKoMFC5IFq": [
+    {
+      "type": 0,
+      "value": "Select Extension FolderSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "hZ9MEsSHoK": [
+    {
+      "type": 0,
+      "value": "Install Extension...SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "hzKMHWvM80": [
+    {
+      "type": 0,
+      "value": "Restart to update to "
+    },
+    {
+      "type": 1,
+      "value": "updateVersion"
+    },
+    {
+      "type": 0,
+      "value": "SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "i6wCMcpNrS": [
+    {
+      "type": 0,
+      "value": "You've used "
+    },
+    {
+      "type": 1,
+      "value": "key"
+    },
+    {
+      "type": 0,
+      "value": " to speak to Claude, but Claude needs microphone permission.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "iFRmqBsr1N": [
+    {
+      "type": 0,
+      "value": "About ClaudeSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "iSj8sZcXxp": [
+    {
+      "type": 0,
+      "value": "Cache cleared successfullySSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "iXTDYY7Kqi": [
+    {
+      "type": 0,
+      "value": "Show Logs in File ManagerSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "ilE9e0uxNN": [
+    {
+      "type": 0,
+      "value": "RefreshSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "j66cdL4EK5": [
+    {
+      "type": 0,
+      "value": "Open DocumentationSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "jOY1Gy+4Ti": [
+    {
+      "type": 0,
+      "value": "Cowork requires macOS 14.0 (Sonoma) or later. Update your operating system to use this feature.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "jpjbvS12R7": [
+    {
+      "type": 0,
+      "value": "Load Local Claude.aiSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "k9Ayptus7s": [
+    {
+      "type": 0,
+      "value": "ResetSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "kEsl25nlp0": [
+    {
+      "type": 0,
+      "value": "PrototypesSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "kFZ7xboYEB": [
+    {
+      "type": 0,
+      "value": "You have disabled CoworkSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "l+YNRZY/eS": [
+    {
+      "type": 0,
+      "value": "This will open your default email application to compose a message to "
+    },
+    {
+      "type": 1,
+      "value": "email"
+    },
+    {
+      "type": 0,
+      "value": ".SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "l6/rglN9Fm": [
+    {
+      "type": 0,
+      "value": "Copy URLSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "l9MtS7TzCl": [
+    {
+      "type": 0,
+      "value": "This desktop extension will be installed on your computer. In order to install this extension we need to fetch a few dependencies. This may take a few minutes.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "lHUUJjwou0": [
+    {
+      "type": 0,
+      "value": "Reset completeSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "lQXxJomNoi": [
+    {
+      "type": 0,
+      "value": "Not nowSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "lT2QKmzm+2": [
+    {
+      "type": 0,
+      "value": "Error deleting VM sessionsSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "m3GfpKD1WX": [
+    {
+      "type": 0,
+      "value": "ReloadSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "m6UMGDluaq": [
+    {
+      "type": 0,
+      "value": "Copy Image AddressSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "mCXNyEdJat": [
+    {
+      "type": 0,
+      "value": "Copied version to clipboardSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "mDdef8+NGs": [
+    {
+      "type": 0,
+      "value": "Last update attempt failed...SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "mHe7uc8Zg3": [
+    {
+      "type": 0,
+      "value": "Submit FeedbackSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "mRXjxhS6p4": [
+    {
+      "type": 0,
+      "value": "Check for Updates…SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "mamRHI1kFH": [
+    {
+      "type": 0,
+      "value": "Learn moreSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "mhc+Y6yjMO": [
+    {
+      "type": 0,
+      "value": "Copy Link AddressSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "mnsztLoDNZ": [
+    {
+      "type": 0,
+      "value": "Open SettingsSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "mtAOMWDDTh": [
+    {
+      "type": 0,
+      "value": "Claude will have read and write access to files in "
+    },
+    {
+      "type": 1,
+      "value": "path"
+    },
+    {
+      "type": 0,
+      "value": ".SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "nQR7K3Z4D5": [
+    {
+      "type": 0,
+      "value": "Install Claude in ChromeSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "ncNfeM+qq2": [
+    {
+      "type": 0,
+      "value": "Don't ask againSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "ngLpGT7bUJ": [
+    {
+      "type": 0,
+      "value": "Could not load developer settingsSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "oINGaIFgG6": [
+    {
+      "type": 0,
+      "value": "Open Extension Settings Folder...SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "oLoNQiXuqZ": [
+    {
+      "type": 0,
+      "value": "Check your Claude in Chrome accountSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "oQuOiX24pp": [
+    {
+      "type": 0,
+      "value": "QuitSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "odvvwvsA/1": [
+    {
+      "type": 0,
+      "value": "Allow Claude to cowork in "
+    },
+    {
+      "type": 1,
+      "value": "path"
+    },
+    {
+      "type": 0,
+      "value": "?SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "of/TiVeRBb": [
+    {
+      "type": 0,
+      "value": "This will delete and re-download your workspace. Your existing session data will be preserved.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "oqcioCyuAP": [
+    {
+      "type": 0,
+      "value": "Claude's installation appears to be corrupted. Reinstall Claude from claude.com/download to use this feature.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "pQjpVULNUK": [
+    {
+      "type": 0,
+      "value": "Fix ownershipSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "pWLdTcEuat": [
+    {
+      "type": 0,
+      "value": "Open Chrome Web StoreSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "pWXxZASpOB": [
+    {
+      "type": 0,
+      "value": "HelpSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "pz9fNjr/Ms": [
+    {
+      "type": 0,
+      "value": "Install UpdateSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "q4hs14B00V": [
+    {
+      "type": 0,
+      "value": "Unknown errorSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "qG7v6CGR4F": [
+    {
+      "type": 0,
+      "value": "Downloading Update...SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "qKeKrKCSD+": [
+    {
+      "type": 0,
+      "value": "MCP Configuration Reload FailedSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "qz9XeGmw0N": [
+    {
+      "type": 0,
+      "value": "CancelSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "r/37cmiGuE": [
+    {
+      "type": 0,
+      "value": "Cannot open skillSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "rCO+ULu7rr": [
+    {
+      "type": 0,
+      "value": "Extension "
+    },
+    {
+      "type": 1,
+      "value": "extensionId"
+    },
+    {
+      "type": 0,
+      "value": " is blocked by a security blocklist: "
+    },
+    {
+      "type": 1,
+      "value": "reason"
+    },
+    {
+      "type": 0,
+      "value": "SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "rNAd+HxSK4": [
+    {
+      "type": 0,
+      "value": "Open MCP Log FileSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "rNxkVelwuD": [
+    {
+      "type": 0,
+      "value": "Could not open the specified folder.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "rY99UXvTDU": [
+    {
+      "type": 0,
+      "value": "Copy ImageSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "rdiPpQVqvY": [
+    {
+      "type": 0,
+      "value": "Developer mode allows access to developer tools and debugging features. Only enable this if you know what you're doing.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "rwFEudHXey": [
+    {
+      "type": 0,
+      "value": "There was an error reading or parsing claude_desktop_config.json: "
+    },
+    {
+      "type": 1,
+      "value": "error"
+    },
+    {
+      "type": 0,
+      "value": "SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "s7EJA5V2XI": [
+    {
+      "type": 0,
+      "value": "Version "
+    },
+    {
+      "type": 1,
+      "value": "currentVersion"
+    },
+    {
+      "type": 0,
+      "value": " → "
+    },
+    {
+      "type": 1,
+      "value": "newVersion"
+    },
+    {
+      "type": 0,
+      "value": " Would you like to install this update?SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "s9613Wd32V": [
+    {
+      "type": 0,
+      "value": "Error Opening FolderSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "sLqBzYBjWk": [
+    {
+      "type": 0,
+      "value": "You'll need to grant Claude access to your microphone in System Settings.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "sNnRQsIEYz": [
+    {
+      "type": 0,
+      "value": "Find in pageSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "sNotLv3TK+": [
+    {
+      "type": 0,
+      "value": "CodeSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "sRcCpOpu8r": [
+    {
+      "type": 0,
+      "value": "Allow Claude to use "
+    },
+    {
+      "type": 1,
+      "value": "toolName"
+    },
+    {
+      "type": 0,
+      "value": "?SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "sUQ9/bNl4T": [
+    {
+      "type": 0,
+      "value": "Fix required for auto-updatesSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "sWuWveHruj": [
+    {
+      "type": 0,
+      "value": "Error deleting VM bundleSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "sfX/GDKSJS": [
+    {
+      "type": 0,
+      "value": "OKSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "sxmY1kIQyH": [
+    {
+      "type": 0,
+      "value": "Delete Cowork VM Bundle and Restart…SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "tBeSdR33YY": [
+    {
+      "type": 0,
+      "value": "About ClaudeSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "tGP7K8z3w7": [
+    {
+      "type": 0,
+      "value": "Caps LockSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "tWutslc/9Z": [
+    {
+      "type": 0,
+      "value": "EnableSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "tcCGfV4kUw": [
+    {
+      "type": 0,
+      "value": "This will stop any running VM sessions, delete all local agent mode session data, and restart the app. This action cannot be undone. Are you sure you want to continue?SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "tdoSuxb1IL": [
+    {
+      "type": 0,
+      "value": "The extension could not be installed due to the following error: "
+    },
+    {
+      "type": 1,
+      "value": "errorMessage"
+    },
+    {
+      "type": 0,
+      "value": "SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "to40hXUNmk": [
+    {
+      "type": 0,
+      "value": "Get SupportSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "tsxOTfL/Of": [
+    {
+      "type": 0,
+      "value": "Some folders were skippedSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "uCuWiNkafs": [
+    {
+      "type": 0,
+      "value": "InstallSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "uKCcuVd1Yt": [
+    {
+      "type": 0,
+      "value": "Reload MCP ConfigurationSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "uc3dnSo+eo": [
+    {
+      "type": 0,
+      "value": "FileSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "vBHxgwQGGk": [
+    {
+      "type": 0,
+      "value": "Your settings file was corrupted and has been reset to defaults. You may need to reconfigure your preferences.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "vTbKXLJZxV": [
+    {
+      "type": 0,
+      "value": "The selected folder is outside your home directory.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "vgLHPxjh9O": [
+    {
+      "type": 0,
+      "value": "Enable Developer ModeSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "vogrtr3KsQ": [
+    {
+      "type": 0,
+      "value": "Copy Installation IDSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "vzhC36mVND": [
+    {
+      "type": 0,
+      "value": "Would you like to submit your issue with debug logs? Submitting your issue with logs will send system information to Anthropic for debugging and future improvements to our models.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "wj7AWpPq6R": [
+    {
+      "type": 0,
+      "value": "This will stop any running VM sessions, delete the VM bundle files, and restart the app. The bundle will be re-downloaded the next time you use the VM. Are you sure you want to continue?SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "wkjvJ1mzSN": [
+    {
+      "type": 0,
+      "value": "Invalid Folder SelectionSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "xJs1jZ8PoA": [
+    {
+      "type": 0,
+      "value": "Claude runs in the background even when you close the window. Click the Claude icon in the tray to reopen the app, or right-click to quit.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "xUWKTVQzGH": [
+    {
+      "type": 0,
+      "value": "That feature change requires an app restart to take effect.SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "xd436TVDRZ": [
+    {
+      "type": 0,
+      "value": "There was an error reading or parsing developer_settings.json: "
+    },
+    {
+      "type": 1,
+      "value": "error"
+    },
+    {
+      "type": 0,
+      "value": "SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "xiNOx2x9zT": [
+    {
+      "type": 0,
+      "value": "Open email link?SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "y9tCbmRzHN": [
+    {
+      "type": 0,
+      "value": "Enable Developer Mode?SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "ytEQo80lWc": [
+    {
+      "type": 0,
+      "value": "Reset App Data…SSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "ytjMRobdyL": [
+    {
+      "type": 0,
+      "value": "Update AvailableSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "yxDdMS8KTw": [
+    {
+      "type": 0,
+      "value": "App FeaturesSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "z0kEdJ2iRu": [
+    {
+      "type": 0,
+      "value": "RestartSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "zAYm/Z684h": [
+    {
+      "type": 0,
+      "value": "HelpSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ],
+  "ze7mxSJ8h8": [
+    {
+      "type": 0,
+      "value": "OpenSSSSSSSSSSSSSSSSSSSSSSSSS"
+    }
+  ]
+}

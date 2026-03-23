@@ -1,0 +1,1820 @@
+{
+  "+/cwsayrqk": [
+    {
+      "type": 0,
+      "value": "ACTUAL SIZE"
+    }
+  ],
+  "+7sd9hoyZA": [
+    {
+      "type": 0,
+      "value": "COPY"
+    }
+  ],
+  "+NwlCZ9GfR": [
+    {
+      "type": 0,
+      "value": "YOU ARE NOT LOGGED IN. PLEASE LOG IN TO ACCESS THE EXTENSIONS DIRECTORY."
+    }
+  ],
+  "/PgA81GVOD": [
+    {
+      "type": 0,
+      "value": "EDIT"
+    }
+  ],
+  "/bRGKhnXQ6": [
+    {
+      "type": 0,
+      "value": "A NEW VERSION IS AVAILABLE. IT WILL BE DOWNLOADED AND INSTALLED AUTOMATICALLY."
+    }
+  ],
+  "06KK1e0srf": [
+    {
+      "type": 0,
+      "value": "THE OWNERSHIP FIX DIDN'T COMPLETE. AUTO-UPDATES MAY NOT WORK UNTIL THIS IS RESOLVED. YOU CAN TRY AGAIN NEXT TIME."
+    }
+  ],
+  "0GT0SIETlE": [
+    {
+      "type": 0,
+      "value": "CANCEL"
+    }
+  ],
+  "0NmcPHSn/L": [
+    {
+      "type": 0,
+      "value": "OWNERSHIP FIX FAILED"
+    }
+  ],
+  "0eJo9Vzuvt": [
+    {
+      "type": 0,
+      "value": "TRUST "
+    },
+    {
+      "type": 1,
+      "value": "cwd"
+    },
+    {
+      "type": 0,
+      "value": " AND START A CODE SESSION?"
+    }
+  ],
+  "0tZLEYF8mJ": [
+    {
+      "type": 0,
+      "value": "DEVELOPER"
+    }
+  ],
+  "0vttuC3ieI": [
+    {
+      "type": 0,
+      "value": "LOAD REMOTE CLAUDE.AI"
+    }
+  ],
+  "1HUTYwndT2": [
+    {
+      "type": 0,
+      "value": "WINDOW"
+    }
+  ],
+  "1nSZez10qJ": [
+    {
+      "type": 0,
+      "value": "FAILED TO PREVIEW EXTENSION"
+    }
+  ],
+  "1o7ejsqYGi": [
+    {
+      "type": 0,
+      "value": "EXTENSION INSTALLATION FAILED"
+    }
+  ],
+  "2/2BMRHIA/": [
+    {
+      "type": 0,
+      "value": "DEBUG"
+    }
+  ],
+  "2OTyZOnjhc": [
+    {
+      "type": 0,
+      "value": "THE EXTENSION COULD NOT BE PREVIEWED DUE TO THE FOLLOWING ERROR. PLEASE ENSURE THE DXT FILE IS VALID AND TRY AGAIN. "
+    },
+    {
+      "type": 1,
+      "value": "errorMessage"
+    }
+  ],
+  "2Spx55hKaC": [
+    {
+      "type": 0,
+      "value": "THIS FEATURE REQUIRES MACOS 13.0 OR HIGHER"
+    }
+  ],
+  "2cplZXFjPL": [
+    {
+      "type": 0,
+      "value": "REINSTALL WORKSPACE"
+    }
+  ],
+  "38E9oKs/ky": [
+    {
+      "type": 0,
+      "value": "DELETE COWORK VM SESSIONS AND RESTART…"
+    }
+  ],
+  "39r88rYBHt": [
+    {
+      "type": 0,
+      "value": "SUBMIT FEEDBACK - CLAUDE"
+    }
+  ],
+  "3FWTqed5/h": [
+    {
+      "type": 0,
+      "value": "OPEN LINK IN BROWSER"
+    }
+  ],
+  "3ML3xT+gEV": [
+    {
+      "type": 0,
+      "value": "REDO"
+    }
+  ],
+  "3unrKzH4zB": [
+    {
+      "type": 0,
+      "value": "COPY"
+    }
+  ],
+  "4G+5nA56fK": [
+    {
+      "type": 0,
+      "value": "COWORK HAS BEEN DISABLED BY YOUR ORGANIZATION ADMINISTRATOR"
+    }
+  ],
+  "4KjH9o80Fc": [
+    {
+      "type": 0,
+      "value": "CHECKING FOR UPDATES..."
+    }
+  ],
+  "4MLbtbVfJv": [
+    {
+      "type": 0,
+      "value": "CUT"
+    }
+  ],
+  "4R0oWVuAfJ": [
+    {
+      "type": 0,
+      "value": "NOT NOW"
+    }
+  ],
+  "4XmExNuKUb": [
+    {
+      "type": 0,
+      "value": "TROUBLESHOOTING"
+    }
+  ],
+  "4wArDWCxOC": [
+    {
+      "type": 0,
+      "value": "DELETE VM SESSIONS AND RESTART"
+    }
+  ],
+  "5ASYey6oV6": [
+    {
+      "type": 0,
+      "value": "INSTALL AND RESTART CHROME"
+    }
+  ],
+  "5DUIVR3fVi": [
+    {
+      "type": 0,
+      "value": "ABOUT..."
+    }
+  ],
+  "5d9BF195un": [
+    {
+      "type": 0,
+      "value": "RESTART CHROME"
+    }
+  ],
+  "5fDh29sjSc": [
+    {
+      "type": 0,
+      "value": "FAILED TO RELOAD MCP CONFIGURATION. PLEASE CHECK THE LOGS FOR MORE DETAILS."
+    }
+  ],
+  "6Blr2N4E48": [
+    {
+      "type": 0,
+      "value": "DELETE AND RESTART"
+    }
+  ],
+  "6yMDaC30L4": [
+    {
+      "type": 0,
+      "value": "THIS EXTENSION REQUIRES A VALID SIGNATURE"
+    }
+  ],
+  "6yv8ytK4El": [
+    {
+      "type": 0,
+      "value": "CHECK YOUR NETWORK CONNECTION"
+    }
+  ],
+  "7Arh/jSQPF": [
+    {
+      "type": 0,
+      "value": "THIS WILL OPEN "
+    },
+    {
+      "type": 1,
+      "value": "appName"
+    },
+    {
+      "type": 0,
+      "value": " TO COMPOSE A MESSAGE TO "
+    },
+    {
+      "type": 1,
+      "value": "email"
+    },
+    {
+      "type": 0,
+      "value": "."
+    }
+  ],
+  "7BkU20KRFT": [
+    {
+      "type": 0,
+      "value": "COWORK REQUIRES WINDOWS 10 BUILD 2004 OR LATER. UPDATE YOUR OPERATING SYSTEM TO USE THIS FEATURE."
+    }
+  ],
+  "7DG1YUwIAv": [
+    {
+      "type": 0,
+      "value": "ENABLE COWORK VM DEBUG LOGGING"
+    }
+  ],
+  "7G27hVrdBJ": [
+    {
+      "type": 0,
+      "value": "INSTALL"
+    }
+  ],
+  "7fdcqxofEs": [
+    {
+      "type": 0,
+      "value": "EXIT"
+    }
+  ],
+  "7uauQ/gScy": [
+    {
+      "type": 0,
+      "value": "ONLY FOLDERS WITHIN YOUR HOME DIRECTORY CAN BE USED. "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 7
+            },
+            {
+              "type": 0,
+              "value": " FOLDER WAS"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 7
+            },
+            {
+              "type": 0,
+              "value": " FOLDERS WERE"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "skipped"
+    },
+    {
+      "type": 0,
+      "value": " SKIPPED."
+    }
+  ],
+  "82jNv3f0M7": [
+    {
+      "type": 0,
+      "value": "LEARN SPELLING"
+    }
+  ],
+  "8ABQf0B1B0": [
+    {
+      "type": 0,
+      "value": "PREVIEW"
+    }
+  ],
+  "8Ru8/2NkQP": [
+    {
+      "type": 0,
+      "value": "EXTENSION PREVIEW FAILED"
+    }
+  ],
+  "8W7dNhwk37": [
+    {
+      "type": 1,
+      "value": "extensionDetails"
+    },
+    {
+      "type": 0,
+      "value": " THESE EXTENSIONS WILL REMAIN INSTALLED AND CAN BE RE-ENABLED IF YOU SWITCH TO AN ORGANIZATION WHERE THEY ARE ALLOWED. YOU CAN ALSO DELETE THEM FROM SETTINGS."
+    }
+  ],
+  "8YQEOfuaGO": [
+    {
+      "type": 0,
+      "value": "SELECT ALL"
+    }
+  ],
+  "9+afSO9e/t": [
+    {
+      "type": 0,
+      "value": "FAILED TO CHECK FOR UPDATES: "
+    },
+    {
+      "type": 1,
+      "value": "error"
+    }
+  ],
+  "9DyIMdlUEL": [
+    {
+      "type": 0,
+      "value": "ERROR ACCESSING LOGS"
+    }
+  ],
+  "9OBj0jX9+a": [
+    {
+      "type": 0,
+      "value": "LINK COULDN'T BE OPENED"
+    }
+  ],
+  "9OFtp2pNVO": [
+    {
+      "type": 0,
+      "value": "CANCEL"
+    }
+  ],
+  "9aJv5Q6PQw": [
+    {
+      "type": 0,
+      "value": "SKIP FEEDBACK AND REINSTALL"
+    }
+  ],
+  "9r3qRuB970": [
+    {
+      "type": 0,
+      "value": "WOULD YOU LIKE TO SUBMIT YOUR ISSUE WITH DEBUG LOGS? SUBMITTING YOUR ISSUE WITH LOGS WILL SEND THE ENTIRE CURRENT CONVERSATION AS WELL AS SYSTEM INFORMATION TO ANTHROPIC FOR DEBUGGING AND FUTURE IMPROVEMENTS TO OUR MODELS."
+    }
+  ],
+  "AAoe5u9j1e": [
+    {
+      "type": 0,
+      "value": "DO YOU WANT TO INSTALL "
+    },
+    {
+      "type": 1,
+      "value": "extensionName"
+    },
+    {
+      "type": 0,
+      "value": "?"
+    }
+  ],
+  "AikjBHvhjy": [
+    {
+      "type": 0,
+      "value": "LOGIN TO CLAUDE IN CHROME"
+    }
+  ],
+  "AtL30+PDZZ": [
+    {
+      "type": 0,
+      "value": "CLAUDE NEEDS MICROPHONE PERMISSION"
+    }
+  ],
+  "C/K/kK/zlp": [
+    {
+      "type": 0,
+      "value": "COWORK REQUIRES VIRTUALIZATION. YOUR MAC DOES NOT SUPPORT VIRTUALIZATION. IF YOU ARE CURRENTLY RUNNING MACOS INSIDE A VIRTUAL MACHINE (LIKE PARALLELS), YOU MIGHT NEED TO ENABLE A FEATURE CALLED 'NESTED VIRTUALIZATION'."
+    }
+  ],
+  "CDnvwxVwpJ": [
+    {
+      "type": 0,
+      "value": "THE FOLLOWING EXTENSIONS HAVE BEEN DISABLED BECAUSE THEY ARE NOT ALLOWED IN YOUR CURRENT ORGANIZATION:"
+    }
+  ],
+  "CizRPROPWo": [
+    {
+      "type": 0,
+      "value": "CLAUDE HELP"
+    }
+  ],
+  "CspaHtRhfg": [
+    {
+      "type": 0,
+      "value": "OPEN EXTENSIONS FOLDER..."
+    }
+  ],
+  "D0sIyzNO/8": [
+    {
+      "type": 0,
+      "value": "THE CHROME EXTENSION NEEDS TO BE SIGNED IN WITH THE SAME ACCOUNT AS CLAUDE DESKTOP ("
+    },
+    {
+      "type": 1,
+      "value": "email"
+    },
+    {
+      "type": 0,
+      "value": "). OPEN THE EXTENSION, SIGN IN IF NEEDED, AND MAKE SURE THE ACCOUNTS MATCH. IF YOU'VE JUST INSTALLED THE EXTENSION, TRY RESTARTING CHROME."
+    }
+  ],
+  "D4DyT6MmPy": [
+    {
+      "type": 0,
+      "value": "COULD NOT LOAD APP SETTINGS"
+    }
+  ],
+  "DPsM7/BhfA": [
+    {
+      "type": 0,
+      "value": "SHOW LOGS IN FINDER"
+    }
+  ],
+  "DQTgg21B7g": [
+    {
+      "type": 0,
+      "value": "SHOW APP"
+    }
+  ],
+  "Drf4+ubb3h": [
+    {
+      "type": 0,
+      "value": "MAKE SURE YOU ARE SIGNED IN TO CLAUDE IN CHROME WITH THE SAME ACCOUNT AS CLAUDE DESKTOP."
+    }
+  ],
+  "EfdnINFnIz": [
+    {
+      "type": 0,
+      "value": "FILE"
+    }
+  ],
+  "EmeqFY8DA1": [
+    {
+      "type": 0,
+      "value": "COWORK REQUIRES CLAUDE DESKTOP BE INSTALLED WITH OUR MODERN INSTALLER"
+    }
+  ],
+  "FQTy8EJmqH": [
+    {
+      "type": 0,
+      "value": "OPEN EXTENSION SETTINGS"
+    }
+  ],
+  "HOyJhbAD40": [
+    {
+      "type": 0,
+      "value": "RESTART NOW"
+    }
+  ],
+  "HQ9fMJxTjW": [
+    {
+      "type": 0,
+      "value": "COWORK IS NOT CURRENTLY SUPPORTED ON WINDOWS ON ARM. COMING SOON."
+    }
+  ],
+  "HmOsjnFwIk": [
+    {
+      "type": 0,
+      "value": "THE EXTENSION "
+    },
+    {
+      "type": 1,
+      "value": "extensionName"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "organizationText"
+    },
+    {
+      "type": 0,
+      "value": " HAS AN UPDATE AVAILABLE."
+    }
+  ],
+  "IsRn01mSn6": [
+    {
+      "type": 0,
+      "value": "DO NOT ATTACH LOGS"
+    }
+  ],
+  "JOISpUWyGN": [
+    {
+      "type": 0,
+      "value": "THE SKILL FILE COULD NOT BE FOUND."
+    }
+  ],
+  "JOf7G+dCf1": [
+    {
+      "type": 0,
+      "value": "OPEN APP CONFIG FILE..."
+    }
+  ],
+  "JVwNvMZjVT": [
+    {
+      "type": 0,
+      "value": "PASTE"
+    }
+  ],
+  "JdZ6sg/SPx": [
+    {
+      "type": 0,
+      "value": "SUBMIT FEEDBACK AND REINSTALL WORKSPACE"
+    }
+  ],
+  "JlcyIK3E4r": [
+    {
+      "type": 0,
+      "value": "DELETE VM BUNDLE AND RESTART"
+    }
+  ],
+  "JqJWa8ljgB": [
+    {
+      "type": 0,
+      "value": "CLAUDE WILL HAVE READ AND WRITE ACCESS TO THIS FOLDER. IT WILL ALSO BE TRUSTED IN THE CODE TAB."
+    }
+  ],
+  "K5GtyaPaw/": [
+    {
+      "type": 0,
+      "value": "OPEN DEVELOPER CONFIG FILE..."
+    }
+  ],
+  "KAo3lt5Hv+": [
+    {
+      "type": 0,
+      "value": "PASTE"
+    }
+  ],
+  "KETtxy51p+": [
+    {
+      "type": 0,
+      "value": "INSPECT ELEMENT"
+    }
+  ],
+  "KUGSi676tz": [
+    {
+      "type": 0,
+      "value": "FAILED TO INSTALL EXTENSION"
+    }
+  ],
+  "KUSSz7hnrh": [
+    {
+      "type": 0,
+      "value": "SKILL FILE ERROR"
+    }
+  ],
+  "KeAjLbyOJs": [
+    {
+      "type": 0,
+      "value": "THE CHROME EXTENSION NEEDS TO BE SIGNED IN WITH THE SAME ACCOUNT AS CLAUDE DESKTOP. OPEN THE EXTENSION, SIGN IN IF NEEDED, AND MAKE SURE THE ACCOUNTS MATCH. IF YOU'VE JUST INSTALLED THE EXTENSION, TRY RESTARTING CHROME."
+    }
+  ],
+  "Ko/2Ml7mZG": [
+    {
+      "type": 0,
+      "value": "RELOAD THIS PAGE"
+    }
+  ],
+  "L7zYnb34AH": [
+    {
+      "type": 0,
+      "value": "ERROR CLEARING CACHE"
+    }
+  ],
+  "LCWUQ/4Fu6": [
+    {
+      "type": 0,
+      "value": "VIEW"
+    }
+  ],
+  "LN5XCdewH0": [
+    {
+      "type": 0,
+      "value": "THIS ALLOWS CLAUDE TO WORK WITH WEBSITES DIRECTLY IN YOUR BROWSER. ONLY GRANT \"ALWAYS ALLOW\" FOR SITES YOU TRUST."
+    }
+  ],
+  "LShRh03tIJ": [
+    {
+      "type": 0,
+      "value": "RECORD NET LOG (30S)"
+    }
+  ],
+  "Lw6AWRo971": [
+    {
+      "type": 0,
+      "value": "SKILL FILE IS TOO LARGE. MAXIMUM SIZE IS 30 MB."
+    }
+  ],
+  "MNF5cWO3lm": [
+    {
+      "type": 0,
+      "value": "FROM YOUR ORGANIZATION"
+    }
+  ],
+  "MVVosgIfRl": [
+    {
+      "type": 0,
+      "value": "ATTACH LOGS"
+    }
+  ],
+  "MpGNf3UQ/u": [
+    {
+      "type": 0,
+      "value": "FAILED TO OPEN SKILL FILE."
+    }
+  ],
+  "N3XFOdWdG+": [
+    {
+      "type": 0,
+      "value": "CLAUDE CODE FOR DESKTOP HAS BEEN DISABLED BY YOUR ORGANIZATION ADMINISTRATOR"
+    }
+  ],
+  "NNEmTvq77p": [
+    {
+      "type": 0,
+      "value": "FROM "
+    },
+    {
+      "type": 1,
+      "value": "orgName"
+    }
+  ],
+  "Nmvo1ufAY5": [
+    {
+      "type": 0,
+      "value": "COULDN'T CONNECT TO CLAUDE"
+    }
+  ],
+  "NoMbiF3ygy": [
+    {
+      "type": 0,
+      "value": "THIS FEATURE REQUIRES MACOS 14.0 OR HIGHER"
+    }
+  ],
+  "O3rtEd7aMd": [
+    {
+      "type": 0,
+      "value": "FIND"
+    }
+  ],
+  "ODySlGptaj": [
+    {
+      "type": 0,
+      "value": "SETTINGS…"
+    }
+  ],
+  "P29/Q2jnYR": [
+    {
+      "type": 0,
+      "value": "DISABLE HARDWARE ACCELERATION"
+    }
+  ],
+  "PH29MShDiy": [
+    {
+      "type": 0,
+      "value": "FORWARD"
+    }
+  ],
+  "PLekkCVPq/": [
+    {
+      "type": 0,
+      "value": "VIEW PROCESS LOGS"
+    }
+  ],
+  "PM15jpE/4b": [
+    {
+      "type": 0,
+      "value": "THIS DESKTOP EXTENSION WILL BE INSTALLED ON YOUR COMPUTER AND MADE AVAILABLE TO CLAUDE."
+    }
+  ],
+  "PW5U8NgTto": [
+    {
+      "type": 0,
+      "value": "OPEN MCP LOG FILE..."
+    }
+  ],
+  "PZtcoAOSsa": [
+    {
+      "type": 0,
+      "value": "DON'T ENABLE"
+    }
+  ],
+  "PbJ4jR0kv1": [
+    {
+      "type": 0,
+      "value": "YOU ARE RUNNING THE LATEST VERSION."
+    }
+  ],
+  "PlnPoPqhHR": [
+    {
+      "type": 0,
+      "value": "THIS WILL DELETE ALL APPLICATION DATA INCLUDING SETTINGS, CACHE, AND LOGIN INFORMATION. THE APPLICATION WILL RESTART AFTER THE RESET. ARE YOU SURE YOU WANT TO CONTINUE?"
+    }
+  ],
+  "Q0f46SlJwJ": [
+    {
+      "type": 0,
+      "value": "EXTENSIONS"
+    }
+  ],
+  "QR+qh6XJm9": [
+    {
+      "type": 0,
+      "value": "ONLY FOLDERS WITHIN YOUR HOME DIRECTORY CAN BE USED. YOU CAN SELECT A DIFFERENT FOLDER."
+    }
+  ],
+  "R0/CZEcsoI": [
+    {
+      "type": 0,
+      "value": "REDO"
+    }
+  ],
+  "R0eWwXTpvw": [
+    {
+      "type": 0,
+      "value": "SKILL FILE NOT FOUND"
+    }
+  ],
+  "RLUi8uLyg5": [
+    {
+      "type": 0,
+      "value": "CANCEL"
+    }
+  ],
+  "RTg057HE1D": [
+    {
+      "type": 0,
+      "value": "SHOW DEV TOOLS"
+    }
+  ],
+  "RwAL0a5BvW": [
+    {
+      "type": 0,
+      "value": "SKILL FILE TOO LARGE"
+    }
+  ],
+  "S3MXlbjkax": [
+    {
+      "type": 0,
+      "value": "WHAT CAN I HELP YOU WITH TODAY?"
+    }
+  ],
+  "S3k5yXss2r": [
+    {
+      "type": 0,
+      "value": "VERSION "
+    },
+    {
+      "type": 1,
+      "value": "version"
+    }
+  ],
+  "ST57NJKyxu": [
+    {
+      "type": 0,
+      "value": "INSTALL UNPACKED EXTENSION..."
+    }
+  ],
+  "STqYpFr7p4": [
+    {
+      "type": 0,
+      "value": "SHOW ALL DEV TOOLS"
+    }
+  ],
+  "TFAn543BGt": [
+    {
+      "type": 0,
+      "value": "THE APPLICATION WILL NOW RESTART."
+    }
+  ],
+  "TH+W2Ad73P": [
+    {
+      "type": 0,
+      "value": "CUT"
+    }
+  ],
+  "TuYHFkHN2Q": [
+    {
+      "type": 0,
+      "value": "EXTENSION INSTALLATION FAILED"
+    }
+  ],
+  "U3y6ELplAp": [
+    {
+      "type": 0,
+      "value": "SHOW LOGS IN EXPLORER"
+    }
+  ],
+  "UJCjEVPX6Q": [
+    {
+      "type": 0,
+      "value": "LOOK UP"
+    }
+  ],
+  "V2UBnWthAZ": [
+    {
+      "type": 0,
+      "value": "THE APPLICATION MUST BE RESTARTED FOR THIS CHANGE TO TAKE EFFECT."
+    }
+  ],
+  "VGKaynmhvx": [
+    {
+      "type": 0,
+      "value": "YOU'LL NEED TO GRANT CLAUDE ACCESS TO YOUR MICROPHONE IN SYSTEM SETTINGS."
+    }
+  ],
+  "VT7DsHRYaU": [
+    {
+      "type": 0,
+      "value": "SKIP THIS UPDATE"
+    }
+  ],
+  "Vduz6e0uGR": [
+    {
+      "type": 0,
+      "value": "EXTENSION PREVIEW FAILED"
+    }
+  ],
+  "W1pELwt/+a": [
+    {
+      "type": 0,
+      "value": "CLAUDE RUNS IN THE NOTIFICATION AREA"
+    }
+  ],
+  "WIua8B+cb8": [
+    {
+      "type": 0,
+      "value": "WE FAILED TO OPEN A LINK USING YOUR SYSTEM'S DEFAULT APPLICATION FOR THIS TYPE OF LINK. THIS IS OFTEN CAUSED BY THE DEFAULT APP MISBEHAVING OR YOUR OPERATING SYSTEM REFUSING THE LINK ITSELF. "
+    },
+    {
+      "type": 1,
+      "value": "url"
+    }
+  ],
+  "WZe86KSdrM": [
+    {
+      "type": 0,
+      "value": "ADD TO DICTIONARY"
+    }
+  ],
+  "WlhIx7DfFO": [
+    {
+      "type": 0,
+      "value": "OK"
+    }
+  ],
+  "WtVIeOBH5a": [
+    {
+      "type": 0,
+      "value": "CLAUDE NEST HAS BEEN RESTRICTED FROM ACCESSING THE MICROPHONE BY A SYSTEM ADMINISTRATOR"
+    }
+  ],
+  "WvMIEFradI": [
+    {
+      "type": 0,
+      "value": "COPY LINK"
+    }
+  ],
+  "X59uI0TQ0K": [
+    {
+      "type": 0,
+      "value": "THE APPLICATION WILL NOW RESTART."
+    }
+  ],
+  "XPIoFTkh3e": [
+    {
+      "type": 0,
+      "value": "NO UPDATE AVAILABLE"
+    }
+  ],
+  "XZ36+EBE5/": [
+    {
+      "type": 0,
+      "value": "ZOOM OUT"
+    }
+  ],
+  "Xda79B7DPP": [
+    {
+      "type": 0,
+      "value": "UNDO"
+    }
+  ],
+  "XfMPtFNO8C": [
+    {
+      "type": 0,
+      "value": "GET SUPPORT"
+    }
+  ],
+  "XlnflSakbD": [
+    {
+      "type": 0,
+      "value": "ERROR RESETTING APPLICATION DATA"
+    }
+  ],
+  "YBIwRTlH46": [
+    {
+      "type": 0,
+      "value": "REINSTALL"
+    }
+  ],
+  "YJtjt4jxyX": [
+    {
+      "type": 0,
+      "value": "EXTENSIONS DISABLED"
+    }
+  ],
+  "YxbImDI6tW": [
+    {
+      "type": 0,
+      "value": "SELECT EXTENSION"
+    }
+  ],
+  "YyiMc8yeiX": [
+    {
+      "type": 0,
+      "value": "LATER"
+    }
+  ],
+  "Z0NIdcNF6j": [
+    {
+      "type": 0,
+      "value": "CANCEL"
+    }
+  ],
+  "Z9g5m/V9Nq": [
+    {
+      "type": 0,
+      "value": "ZOOM IN"
+    }
+  ],
+  "ZJZN1+KyJw": [
+    {
+      "type": 0,
+      "value": "SETTINGS..."
+    }
+  ],
+  "ZbNRf7GBxF": [
+    {
+      "type": 0,
+      "value": "CLEAR CACHE AND RESTART"
+    }
+  ],
+  "aDwG4Kb1Ep": [
+    {
+      "type": 0,
+      "value": "EXTENSIONS"
+    }
+  ],
+  "aM9WCiUXzZ": [
+    {
+      "type": 0,
+      "value": "COWORK IS NOT CURRENTLY SUPPORTED ON "
+    },
+    {
+      "type": 1,
+      "value": "platform"
+    },
+    {
+      "type": 0,
+      "value": " WITH AN "
+    },
+    {
+      "type": 1,
+      "value": "arch"
+    },
+    {
+      "type": 0,
+      "value": " CPU"
+    }
+  ],
+  "aNmxuDcWaU": [
+    {
+      "type": 0,
+      "value": "ERROR"
+    }
+  ],
+  "aXdFLiVzjd": [
+    {
+      "type": 0,
+      "value": "SHOW MAIN WINDOW"
+    }
+  ],
+  "arbRxbtBkP": [
+    {
+      "type": 0,
+      "value": "BACK"
+    }
+  ],
+  "b2BK4WgyMA": [
+    {
+      "type": 0,
+      "value": "OR, YOU CAN TURN OFF CLAUDE'S DICTATION FEATURE TO AVOID SEEING THIS MESSAGE WHEN YOU PRESS YOUR HOTKEY."
+    }
+  ],
+  "b61SqQEZrX": [
+    {
+      "type": 0,
+      "value": "INSTALL EXTENSION?"
+    }
+  ],
+  "baGq3gy8z1": [
+    {
+      "type": 0,
+      "value": "NEW CONVERSATION"
+    }
+  ],
+  "cKXmu20FHh": [
+    {
+      "type": 0,
+      "value": "INCLUDE SESSION TRANSCRIPT WITH LOGS"
+    }
+  ],
+  "dKX0bpR+a2": [
+    {
+      "type": 0,
+      "value": "QUIT"
+    }
+  ],
+  "dqd8pTrsCB": [
+    {
+      "type": 0,
+      "value": "FAILED TO LOGIN, IT MAY HAVE BEEN CANCELLED"
+    }
+  ],
+  "eNlKc6VorQ": [
+    {
+      "type": 0,
+      "value": "RESTART REQUIRED"
+    }
+  ],
+  "eYYooZJ2Bs": [
+    {
+      "type": 0,
+      "value": "RESET APPLICATION DATA"
+    }
+  ],
+  "ejDvpt5G15": [
+    {
+      "type": 0,
+      "value": "CLAUDE IS NOT READY TO HANDLE SKILL FILES. TRY AGAIN AFTER THE APP HAS FULLY LOADED."
+    }
+  ],
+  "ejZ+goAcuh": [
+    {
+      "type": 0,
+      "value": "ORGANIZATION EXTENSION UPDATE AVAILABLE"
+    }
+  ],
+  "eovg9YUkde": [
+    {
+      "type": 0,
+      "value": "THE EXTENSION COULD NOT BE INSTALLED. PLEASE ENSURE THE EXTENSION FOLDER IS VALID AND TRY AGAIN. THE ERROR WAS: "
+    },
+    {
+      "type": 1,
+      "value": "errorMessage"
+    }
+  ],
+  "fALugGmt33": [
+    {
+      "type": 0,
+      "value": "UPDATES DISABLED BY ADMIN"
+    }
+  ],
+  "fEeEFfSz4K": [
+    {
+      "type": 0,
+      "value": "ZOOM IN (INDIE COOLER VERSION)"
+    }
+  ],
+  "fFJxOwJRj2": [
+    {
+      "type": 0,
+      "value": "UNDO"
+    }
+  ],
+  "fFcwjFzuez": [
+    {
+      "type": 0,
+      "value": "SETTINGS RESET"
+    }
+  ],
+  "fbqQw7UrWt": [
+    {
+      "type": 0,
+      "value": "FAILED TO PREVIEW EXTENSION."
+    }
+  ],
+  "fkE6LsgdA+": [
+    {
+      "type": 0,
+      "value": "THIS APP'S FILE OWNERSHIP IS PREVENTING AUTO-UPDATES FROM WORKING SMOOTHLY. CLAUDE NEEDS TO FIX THE OWNERSHIP, WHICH REQUIRES ADMINISTRATOR ACCESS. YOU'LL BE PROMPTED FOR YOUR FINGERPRINT OR PASSWORD."
+    }
+  ],
+  "g4RGEh4EaI": [
+    {
+      "type": 0,
+      "value": "NO MANIFEST.JSON FOUND IN EXTENSION FILE"
+    }
+  ],
+  "gX/JCYf2fo": [
+    {
+      "type": 0,
+      "value": "COWORK IS NOT CURRENTLY SUPPORTED ON "
+    },
+    {
+      "type": 1,
+      "value": "platform"
+    }
+  ],
+  "gpA1MSXiXq": [
+    {
+      "type": 0,
+      "value": "THE EXTENSION DIRECTORY HAS BEEN DISABLED ON YOUR COMPUTER."
+    }
+  ],
+  "grarAzxOkG": [
+    {
+      "type": 0,
+      "value": "SELECT ALL"
+    }
+  ],
+  "h2/d8qB672": [
+    {
+      "type": 0,
+      "value": "OK"
+    }
+  ],
+  "hKoMFC5IFq": [
+    {
+      "type": 0,
+      "value": "SELECT EXTENSION FOLDER"
+    }
+  ],
+  "hZ9MEsSHoK": [
+    {
+      "type": 0,
+      "value": "INSTALL EXTENSION..."
+    }
+  ],
+  "hzKMHWvM80": [
+    {
+      "type": 0,
+      "value": "RESTART TO UPDATE TO "
+    },
+    {
+      "type": 1,
+      "value": "updateVersion"
+    }
+  ],
+  "i6wCMcpNrS": [
+    {
+      "type": 0,
+      "value": "YOU'VE USED "
+    },
+    {
+      "type": 1,
+      "value": "key"
+    },
+    {
+      "type": 0,
+      "value": " TO SPEAK TO CLAUDE, BUT CLAUDE NEEDS MICROPHONE PERMISSION."
+    }
+  ],
+  "iFRmqBsr1N": [
+    {
+      "type": 0,
+      "value": "ABOUT CLAUDE"
+    }
+  ],
+  "iSj8sZcXxp": [
+    {
+      "type": 0,
+      "value": "CACHE CLEARED SUCCESSFULLY"
+    }
+  ],
+  "iXTDYY7Kqi": [
+    {
+      "type": 0,
+      "value": "SHOW LOGS IN FILE MANAGER"
+    }
+  ],
+  "ilE9e0uxNN": [
+    {
+      "type": 0,
+      "value": "REFRESH"
+    }
+  ],
+  "j66cdL4EK5": [
+    {
+      "type": 0,
+      "value": "OPEN DOCUMENTATION"
+    }
+  ],
+  "jOY1Gy+4Ti": [
+    {
+      "type": 0,
+      "value": "COWORK REQUIRES MACOS 14.0 (SONOMA) OR LATER. UPDATE YOUR OPERATING SYSTEM TO USE THIS FEATURE."
+    }
+  ],
+  "jpjbvS12R7": [
+    {
+      "type": 0,
+      "value": "LOAD LOCAL CLAUDE.AI"
+    }
+  ],
+  "k9Ayptus7s": [
+    {
+      "type": 0,
+      "value": "RESET"
+    }
+  ],
+  "kEsl25nlp0": [
+    {
+      "type": 0,
+      "value": "PROTOTYPES"
+    }
+  ],
+  "kFZ7xboYEB": [
+    {
+      "type": 0,
+      "value": "YOU HAVE DISABLED COWORK"
+    }
+  ],
+  "l+YNRZY/eS": [
+    {
+      "type": 0,
+      "value": "THIS WILL OPEN YOUR DEFAULT EMAIL APPLICATION TO COMPOSE A MESSAGE TO "
+    },
+    {
+      "type": 1,
+      "value": "email"
+    },
+    {
+      "type": 0,
+      "value": "."
+    }
+  ],
+  "l6/rglN9Fm": [
+    {
+      "type": 0,
+      "value": "COPY URL"
+    }
+  ],
+  "l9MtS7TzCl": [
+    {
+      "type": 0,
+      "value": "THIS DESKTOP EXTENSION WILL BE INSTALLED ON YOUR COMPUTER. IN ORDER TO INSTALL THIS EXTENSION WE NEED TO FETCH A FEW DEPENDENCIES. THIS MAY TAKE A FEW MINUTES."
+    }
+  ],
+  "lHUUJjwou0": [
+    {
+      "type": 0,
+      "value": "RESET COMPLETE"
+    }
+  ],
+  "lQXxJomNoi": [
+    {
+      "type": 0,
+      "value": "NOT NOW"
+    }
+  ],
+  "lT2QKmzm+2": [
+    {
+      "type": 0,
+      "value": "ERROR DELETING VM SESSIONS"
+    }
+  ],
+  "m3GfpKD1WX": [
+    {
+      "type": 0,
+      "value": "RELOAD"
+    }
+  ],
+  "m6UMGDluaq": [
+    {
+      "type": 0,
+      "value": "COPY IMAGE ADDRESS"
+    }
+  ],
+  "mCXNyEdJat": [
+    {
+      "type": 0,
+      "value": "COPIED VERSION TO CLIPBOARD"
+    }
+  ],
+  "mDdef8+NGs": [
+    {
+      "type": 0,
+      "value": "LAST UPDATE ATTEMPT FAILED..."
+    }
+  ],
+  "mHe7uc8Zg3": [
+    {
+      "type": 0,
+      "value": "SUBMIT FEEDBACK"
+    }
+  ],
+  "mRXjxhS6p4": [
+    {
+      "type": 0,
+      "value": "CHECK FOR UPDATES…"
+    }
+  ],
+  "mamRHI1kFH": [
+    {
+      "type": 0,
+      "value": "LEARN MORE"
+    }
+  ],
+  "mhc+Y6yjMO": [
+    {
+      "type": 0,
+      "value": "COPY LINK ADDRESS"
+    }
+  ],
+  "mnsztLoDNZ": [
+    {
+      "type": 0,
+      "value": "OPEN SETTINGS"
+    }
+  ],
+  "mtAOMWDDTh": [
+    {
+      "type": 0,
+      "value": "CLAUDE WILL HAVE READ AND WRITE ACCESS TO FILES IN "
+    },
+    {
+      "type": 1,
+      "value": "path"
+    },
+    {
+      "type": 0,
+      "value": "."
+    }
+  ],
+  "nQR7K3Z4D5": [
+    {
+      "type": 0,
+      "value": "INSTALL CLAUDE IN CHROME"
+    }
+  ],
+  "ncNfeM+qq2": [
+    {
+      "type": 0,
+      "value": "DON'T ASK AGAIN"
+    }
+  ],
+  "ngLpGT7bUJ": [
+    {
+      "type": 0,
+      "value": "COULD NOT LOAD DEVELOPER SETTINGS"
+    }
+  ],
+  "oINGaIFgG6": [
+    {
+      "type": 0,
+      "value": "OPEN EXTENSION SETTINGS FOLDER..."
+    }
+  ],
+  "oLoNQiXuqZ": [
+    {
+      "type": 0,
+      "value": "CHECK YOUR CLAUDE IN CHROME ACCOUNT"
+    }
+  ],
+  "oQuOiX24pp": [
+    {
+      "type": 0,
+      "value": "QUIT"
+    }
+  ],
+  "odvvwvsA/1": [
+    {
+      "type": 0,
+      "value": "ALLOW CLAUDE TO COWORK IN "
+    },
+    {
+      "type": 1,
+      "value": "path"
+    },
+    {
+      "type": 0,
+      "value": "?"
+    }
+  ],
+  "of/TiVeRBb": [
+    {
+      "type": 0,
+      "value": "THIS WILL DELETE AND RE-DOWNLOAD YOUR WORKSPACE. YOUR EXISTING SESSION DATA WILL BE PRESERVED."
+    }
+  ],
+  "oqcioCyuAP": [
+    {
+      "type": 0,
+      "value": "CLAUDE'S INSTALLATION APPEARS TO BE CORRUPTED. REINSTALL CLAUDE FROM CLAUDE.COM/DOWNLOAD TO USE THIS FEATURE."
+    }
+  ],
+  "pQjpVULNUK": [
+    {
+      "type": 0,
+      "value": "FIX OWNERSHIP"
+    }
+  ],
+  "pWLdTcEuat": [
+    {
+      "type": 0,
+      "value": "OPEN CHROME WEB STORE"
+    }
+  ],
+  "pWXxZASpOB": [
+    {
+      "type": 0,
+      "value": "HELP"
+    }
+  ],
+  "pz9fNjr/Ms": [
+    {
+      "type": 0,
+      "value": "INSTALL UPDATE"
+    }
+  ],
+  "q4hs14B00V": [
+    {
+      "type": 0,
+      "value": "UNKNOWN ERROR"
+    }
+  ],
+  "qG7v6CGR4F": [
+    {
+      "type": 0,
+      "value": "DOWNLOADING UPDATE..."
+    }
+  ],
+  "qKeKrKCSD+": [
+    {
+      "type": 0,
+      "value": "MCP CONFIGURATION RELOAD FAILED"
+    }
+  ],
+  "qz9XeGmw0N": [
+    {
+      "type": 0,
+      "value": "CANCEL"
+    }
+  ],
+  "r/37cmiGuE": [
+    {
+      "type": 0,
+      "value": "CANNOT OPEN SKILL"
+    }
+  ],
+  "rCO+ULu7rr": [
+    {
+      "type": 0,
+      "value": "EXTENSION "
+    },
+    {
+      "type": 1,
+      "value": "extensionId"
+    },
+    {
+      "type": 0,
+      "value": " IS BLOCKED BY A SECURITY BLOCKLIST: "
+    },
+    {
+      "type": 1,
+      "value": "reason"
+    }
+  ],
+  "rNAd+HxSK4": [
+    {
+      "type": 0,
+      "value": "OPEN MCP LOG FILE"
+    }
+  ],
+  "rNxkVelwuD": [
+    {
+      "type": 0,
+      "value": "COULD NOT OPEN THE SPECIFIED FOLDER."
+    }
+  ],
+  "rY99UXvTDU": [
+    {
+      "type": 0,
+      "value": "COPY IMAGE"
+    }
+  ],
+  "rdiPpQVqvY": [
+    {
+      "type": 0,
+      "value": "DEVELOPER MODE ALLOWS ACCESS TO DEVELOPER TOOLS AND DEBUGGING FEATURES. ONLY ENABLE THIS IF YOU KNOW WHAT YOU'RE DOING."
+    }
+  ],
+  "rwFEudHXey": [
+    {
+      "type": 0,
+      "value": "THERE WAS AN ERROR READING OR PARSING CLAUDE_DESKTOP_CONFIG.JSON: "
+    },
+    {
+      "type": 1,
+      "value": "error"
+    }
+  ],
+  "s7EJA5V2XI": [
+    {
+      "type": 0,
+      "value": "VERSION "
+    },
+    {
+      "type": 1,
+      "value": "currentVersion"
+    },
+    {
+      "type": 0,
+      "value": " → "
+    },
+    {
+      "type": 1,
+      "value": "newVersion"
+    },
+    {
+      "type": 0,
+      "value": " WOULD YOU LIKE TO INSTALL THIS UPDATE?"
+    }
+  ],
+  "s9613Wd32V": [
+    {
+      "type": 0,
+      "value": "ERROR OPENING FOLDER"
+    }
+  ],
+  "sLqBzYBjWk": [
+    {
+      "type": 0,
+      "value": "YOU'LL NEED TO GRANT CLAUDE ACCESS TO YOUR MICROPHONE IN SYSTEM SETTINGS."
+    }
+  ],
+  "sNnRQsIEYz": [
+    {
+      "type": 0,
+      "value": "FIND IN PAGE"
+    }
+  ],
+  "sNotLv3TK+": [
+    {
+      "type": 0,
+      "value": "CODE"
+    }
+  ],
+  "sRcCpOpu8r": [
+    {
+      "type": 0,
+      "value": "ALLOW CLAUDE TO USE "
+    },
+    {
+      "type": 1,
+      "value": "toolName"
+    },
+    {
+      "type": 0,
+      "value": "?"
+    }
+  ],
+  "sUQ9/bNl4T": [
+    {
+      "type": 0,
+      "value": "FIX REQUIRED FOR AUTO-UPDATES"
+    }
+  ],
+  "sWuWveHruj": [
+    {
+      "type": 0,
+      "value": "ERROR DELETING VM BUNDLE"
+    }
+  ],
+  "sfX/GDKSJS": [
+    {
+      "type": 0,
+      "value": "OK"
+    }
+  ],
+  "sxmY1kIQyH": [
+    {
+      "type": 0,
+      "value": "DELETE COWORK VM BUNDLE AND RESTART…"
+    }
+  ],
+  "tBeSdR33YY": [
+    {
+      "type": 0,
+      "value": "ABOUT CLAUDE"
+    }
+  ],
+  "tGP7K8z3w7": [
+    {
+      "type": 0,
+      "value": "CAPS LOCK"
+    }
+  ],
+  "tWutslc/9Z": [
+    {
+      "type": 0,
+      "value": "ENABLE"
+    }
+  ],
+  "tcCGfV4kUw": [
+    {
+      "type": 0,
+      "value": "THIS WILL STOP ANY RUNNING VM SESSIONS, DELETE ALL LOCAL AGENT MODE SESSION DATA, AND RESTART THE APP. THIS ACTION CANNOT BE UNDONE. ARE YOU SURE YOU WANT TO CONTINUE?"
+    }
+  ],
+  "tdoSuxb1IL": [
+    {
+      "type": 0,
+      "value": "THE EXTENSION COULD NOT BE INSTALLED DUE TO THE FOLLOWING ERROR: "
+    },
+    {
+      "type": 1,
+      "value": "errorMessage"
+    }
+  ],
+  "to40hXUNmk": [
+    {
+      "type": 0,
+      "value": "GET SUPPORT"
+    }
+  ],
+  "tsxOTfL/Of": [
+    {
+      "type": 0,
+      "value": "SOME FOLDERS WERE SKIPPED"
+    }
+  ],
+  "uCuWiNkafs": [
+    {
+      "type": 0,
+      "value": "INSTALL"
+    }
+  ],
+  "uKCcuVd1Yt": [
+    {
+      "type": 0,
+      "value": "RELOAD MCP CONFIGURATION"
+    }
+  ],
+  "uc3dnSo+eo": [
+    {
+      "type": 0,
+      "value": "FILE"
+    }
+  ],
+  "vBHxgwQGGk": [
+    {
+      "type": 0,
+      "value": "YOUR SETTINGS FILE WAS CORRUPTED AND HAS BEEN RESET TO DEFAULTS. YOU MAY NEED TO RECONFIGURE YOUR PREFERENCES."
+    }
+  ],
+  "vTbKXLJZxV": [
+    {
+      "type": 0,
+      "value": "THE SELECTED FOLDER IS OUTSIDE YOUR HOME DIRECTORY."
+    }
+  ],
+  "vgLHPxjh9O": [
+    {
+      "type": 0,
+      "value": "ENABLE DEVELOPER MODE"
+    }
+  ],
+  "vogrtr3KsQ": [
+    {
+      "type": 0,
+      "value": "COPY INSTALLATION ID"
+    }
+  ],
+  "vzhC36mVND": [
+    {
+      "type": 0,
+      "value": "WOULD YOU LIKE TO SUBMIT YOUR ISSUE WITH DEBUG LOGS? SUBMITTING YOUR ISSUE WITH LOGS WILL SEND SYSTEM INFORMATION TO ANTHROPIC FOR DEBUGGING AND FUTURE IMPROVEMENTS TO OUR MODELS."
+    }
+  ],
+  "wj7AWpPq6R": [
+    {
+      "type": 0,
+      "value": "THIS WILL STOP ANY RUNNING VM SESSIONS, DELETE THE VM BUNDLE FILES, AND RESTART THE APP. THE BUNDLE WILL BE RE-DOWNLOADED THE NEXT TIME YOU USE THE VM. ARE YOU SURE YOU WANT TO CONTINUE?"
+    }
+  ],
+  "wkjvJ1mzSN": [
+    {
+      "type": 0,
+      "value": "INVALID FOLDER SELECTION"
+    }
+  ],
+  "xJs1jZ8PoA": [
+    {
+      "type": 0,
+      "value": "CLAUDE RUNS IN THE BACKGROUND EVEN WHEN YOU CLOSE THE WINDOW. CLICK THE CLAUDE ICON IN THE TRAY TO REOPEN THE APP, OR RIGHT-CLICK TO QUIT."
+    }
+  ],
+  "xUWKTVQzGH": [
+    {
+      "type": 0,
+      "value": "THAT FEATURE CHANGE REQUIRES AN APP RESTART TO TAKE EFFECT."
+    }
+  ],
+  "xd436TVDRZ": [
+    {
+      "type": 0,
+      "value": "THERE WAS AN ERROR READING OR PARSING DEVELOPER_SETTINGS.JSON: "
+    },
+    {
+      "type": 1,
+      "value": "error"
+    }
+  ],
+  "xiNOx2x9zT": [
+    {
+      "type": 0,
+      "value": "OPEN EMAIL LINK?"
+    }
+  ],
+  "y9tCbmRzHN": [
+    {
+      "type": 0,
+      "value": "ENABLE DEVELOPER MODE?"
+    }
+  ],
+  "ytEQo80lWc": [
+    {
+      "type": 0,
+      "value": "RESET APP DATA…"
+    }
+  ],
+  "ytjMRobdyL": [
+    {
+      "type": 0,
+      "value": "UPDATE AVAILABLE"
+    }
+  ],
+  "yxDdMS8KTw": [
+    {
+      "type": 0,
+      "value": "APP FEATURES"
+    }
+  ],
+  "z0kEdJ2iRu": [
+    {
+      "type": 0,
+      "value": "RESTART"
+    }
+  ],
+  "zAYm/Z684h": [
+    {
+      "type": 0,
+      "value": "HELP"
+    }
+  ],
+  "ze7mxSJ8h8": [
+    {
+      "type": 0,
+      "value": "OPEN"
+    }
+  ]
+}
