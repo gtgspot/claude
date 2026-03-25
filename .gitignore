@@ -2,3 +2,14 @@ README.md
 README.md
 Claude.app/Contents/Frameworks/
 .DS_Store
+Claude.app/Contents/Frameworks/
+Contents/Frameworks/
+Contents/Resources/smol-bin.x64.img
+Contents/Resources/smol-bin.arm64.img
+Contents/Resources/claude-ssh/
+Contents/Resources/app.asar.unpacked/
+Contents/Resources/app-source/node_modules/@ant/claude-swift/build/
+Claude.app/Contents/Resources/smol-bin.x64.img
+Claude.app/Contents/Resources/smol-bin.arm64.img
+Claude.app/Contents/Resources/claude-ssh/
+Claude.app/Contents/Resources/app.asar.unpacked/
