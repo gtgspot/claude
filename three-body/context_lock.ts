@@ -3,7 +3,6 @@ import { ThreeBodyConfig } from "./config.js";
 
 // Conservative estimate: 2 chars/token covers CJK, code, and other dense
 // tokenization cases where the common 4 chars/token assumption undershoots badly.
-// This ensures chunking triggers before hitting context limits rather than after.
 function estimateTokens(text: string): number {
   return Math.ceil(text.length / 2);
 }
@@ -13,7 +12,7 @@ function generateId(): string {
 }
 
 function chunkText(text: string, maxTokens: number): string[] {
-  const maxChars = maxTokens * 4;
+  const maxChars = maxTokens * 2; // symmetric with estimateTokens
   if (text.length <= maxChars) return [text];
 
   const chunks: string[] = [];
@@ -33,16 +32,23 @@ export function lockContext(
   inputText: string,
   config: ThreeBodyConfig
 ): ContextLock {
-  const combinedInput = `QUERY:\n${query}\n\nINPUT:\n${inputText}`;
-  const tokenEstimate = estimateTokens(combinedInput);
-  const chunks = chunkText(combinedInput, config.maxChunkTokens);
+  // The query is kept outside the chunked content and prepended to every chunk
+  // so that bodies processing chunk 2, 3, … still know what task they are on.
+  const queryPrefix = `QUERY:\n${query}\n\nINPUT SEGMENT:\n`;
+  const prefixTokens = estimateTokens(queryPrefix);
+  const chunkBudget = config.maxChunkTokens - prefixTokens;
+
+  const rawChunks = chunkText(inputText, chunkBudget);
+  const chunks = rawChunks.map((c) => `${queryPrefix}${c}`);
+
+  const fullText = `QUERY:\n${query}\n\nINPUT:\n${inputText}`;
 
   return {
     lock_id: generateId(),
     timestamp: new Date().toISOString(),
     query,
-    full_input_text: combinedInput,
-    token_estimate: tokenEstimate,
+    full_input_text: fullText,
+    token_estimate: estimateTokens(fullText),
     chunk_count: chunks.length,
     chunks,
   };

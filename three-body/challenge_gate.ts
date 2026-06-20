@@ -4,13 +4,17 @@ import { AnthropicViaDeepSeek, TextBlock } from "./utils/anthropic_via_deepseek.
 import { BodyOutput, ChallengeResult, ConvergenceStatus } from "./schema.js";
 import { ThreeBodyConfig } from "./config.js";
 
-function buildChallengePrompt(target: BodyOutput, challengers: BodyOutput[]): string {
+function buildChallengePrompt(
+  targetText: string,
+  targetBody: string,
+  challengers: Array<{ body: string; text: string }>
+): string {
   return (
-    `Review the following output from the ${target.body} engine:\n\n` +
-    `"""\n${target.raw_output}\n"""\n\n` +
+    `Review the following output from the ${targetBody} engine:\n\n` +
+    `"""\n${targetText}\n"""\n\n` +
     `These are the outputs from the other two engines for comparison:\n\n` +
     challengers
-      .map((c) => `### ${c.body.toUpperCase()} Engine\n${c.raw_output}`)
+      .map((c) => `### ${c.body.toUpperCase()} Engine\n${c.text}`)
       .join("\n\n") +
     `\n\nIdentify any claims in the reviewed output that are:\n` +
     `1. Directly contradicted by the other engines\n` +
@@ -46,13 +50,38 @@ function parseChallenge(raw: string): ParsedChallenge {
   }
 }
 
+async function challengeChunk(
+  targetText: string,
+  targetBody: string,
+  challengers: Array<{ body: string; text: string }>,
+  client: AnthropicViaDeepSeek,
+  config: ThreeBodyConfig
+): Promise<ParsedChallenge> {
+  const prompt = buildChallengePrompt(targetText, targetBody, challengers);
+
+  const message = await client.messages.create({
+    model: config.deepseek.models.challenger,
+    max_tokens: 4096,
+    thinking: { type: "adaptive" },
+    system:
+      "You are a rigorous cross-examiner in a three-body AI reasoning system. Return only valid JSON.",
+    messages: [{ role: "user", content: prompt }],
+  });
+
+  const rawText = message.content
+    .filter((b): b is TextBlock => b.type === "text")
+    .map((b) => b.text)
+    .join("");
+
+  return parseChallenge(rawText);
+}
+
 export async function runChallengeGate(
   deepseekOutput: BodyOutput,
   claudeOutput: BodyOutput,
   openaiOutput: BodyOutput,
   config: ThreeBodyConfig
 ): Promise<{ results: ChallengeResult[]; convergence_status: ConvergenceStatus }> {
-  // Uses the Anthropic SDK interface routed through DeepSeek
   const client = new AnthropicViaDeepSeek(config, config.deepseek.models.challenger);
 
   const bodies = [deepseekOutput, claudeOutput, openaiOutput];
@@ -71,33 +100,54 @@ export async function runChallengeGate(
     }
 
     const challengers = bodies.filter((b) => b.body !== target.body);
-    const prompt = buildChallengePrompt(target, challengers);
+    const chunkCount = target.chunk_outputs?.length ?? 1;
 
-    const message = await client.messages.create({
-      model: config.deepseek.models.challenger,
-      max_tokens: 4096,
-      thinking: { type: "adaptive" },
-      system:
-        "You are a rigorous cross-examiner in a three-body AI reasoning system. Return only valid JSON.",
-      messages: [{ role: "user", content: prompt }],
-    });
+    let allChallenges: Array<{ challenger: string; challenge_text: string }> = [];
+    let survived: boolean;
+    const noteParts: string[] = [];
 
-    const rawText = message.content
-      .filter((b): b is TextBlock => b.type === "text")
-      .map((b) => b.text)
-      .join("");
-
-    const parsed = parseChallenge(rawText);
+    if (chunkCount <= 1) {
+      // Single chunk: challenge using raw_output directly
+      const parsed = await challengeChunk(
+        target.raw_output,
+        target.body,
+        challengers.map((c) => ({ body: c.body, text: c.raw_output })),
+        client,
+        config
+      );
+      allChallenges = parsed.challenges;
+      survived = parsed.survived;
+      noteParts.push(parsed.challenge_notes);
+    } else {
+      // Multi-chunk: challenge each chunk against the matching chunk from each
+      // challenger so no single prompt exceeds the 1M context window.
+      const chunkResults: ParsedChallenge[] = [];
+      for (let i = 0; i < chunkCount; i++) {
+        const targetChunk = target.chunk_outputs![i];
+        const challengerData = challengers.map((c) => ({
+          body: c.body,
+          text: c.chunk_outputs?.[i] ?? c.raw_output,
+        }));
+        const parsed = await challengeChunk(
+          targetChunk, target.body, challengerData, client, config
+        );
+        chunkResults.push(parsed);
+        noteParts.push(`Chunk ${i + 1}/${chunkCount}: ${parsed.challenge_notes}`);
+        allChallenges.push(...parsed.challenges);
+      }
+      // Survived only if every chunk passed cross-examination
+      survived = chunkResults.every((r) => r.survived);
+    }
 
     results.push({
       original_body: target.body,
       original_output: target.raw_output,
-      challenges: parsed.challenges.map((c) => ({
+      challenges: allChallenges.map((c) => ({
         challenger: c.challenger as "deepseek" | "claude" | "openai",
         challenge_text: c.challenge_text,
       })),
-      survived: parsed.survived,
-      challenge_notes: parsed.challenge_notes,
+      survived,
+      challenge_notes: noteParts.join("; "),
     });
   }
 
