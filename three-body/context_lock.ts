@@ -22,9 +22,9 @@ function chunkText(text: string, maxTokens: number): string[] {
     const breakPoint = text.lastIndexOf("\n\n", end);
     let nextOffset: number;
     if (breakPoint > offset) {
-      // Split at paragraph boundary; skip the \n\n separator so the next
-      // chunk doesn't start with leading blank lines (no trim needed).
-      end = breakPoint;
+      // Include the \n\n separator at the end of this chunk so neither side
+      // of the split loses the paragraph boundary that was in the source text.
+      end = breakPoint + 2;
       nextOffset = breakPoint + 2;
     } else {
       nextOffset = end;
