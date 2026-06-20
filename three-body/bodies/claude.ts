@@ -1,10 +1,9 @@
-import { callDeepSeek, extractContent } from "../utils/deepseek_client.js";
+// Adversarial challenge body — uses the Anthropic SDK interface (AnthropicViaDeepSeek)
+// routed through DeepSeek's OpenAI-compatible API via the OpenAI SDK.
+import { AnthropicViaDeepSeek, TextBlock } from "../utils/anthropic_via_deepseek.js";
 import { BodyOutput, ContextLock } from "../schema.js";
 import { ThreeBodyConfig } from "../config.js";
 
-// This body plays the adversarial challenger role — implemented via DeepSeek with
-// a high-temperature, critique-focused system prompt to maximize diversity from
-// the reasoner body despite sharing the same underlying provider.
 const SYSTEM = `You are the Challenge and Long-Context Engine in a three-body reasoning system.
 
 Your role:
@@ -35,6 +34,10 @@ export async function runClaude(
   deepseekOutput: string,
   config: ThreeBodyConfig
 ): Promise<BodyOutput> {
+  // AnthropicViaDeepSeek implements the @anthropic-ai/sdk Messages interface
+  // and routes calls through the OpenAI SDK to DeepSeek's endpoint.
+  const client = new AnthropicViaDeepSeek(config, config.deepseek.models.challenger);
+
   try {
     const outputs: string[] = [];
     let totalTokens = 0;
@@ -47,22 +50,22 @@ export async function runClaude(
         `${chunkLabel}${lock.chunks[i]}\n\n` +
         `---\n## Logic Engine Output\n${deepseekOutput}`;
 
-      const res = await callDeepSeek(
-        {
-          model: config.deepseek.models.challenger,
-          messages: [
-            { role: "system", content: SYSTEM },
-            { role: "user", content: userContent },
-          ],
-          temperature: 0.9, // higher temperature drives adversarial diversity
-          thinking: { type: "enabled" },
-        },
-        config
-      );
+      // Uses the same .stream().finalMessage() pattern as the Anthropic SDK
+      const message = await client.messages.stream({
+        model: config.deepseek.models.challenger,
+        max_tokens: 16000,
+        thinking: { type: "adaptive" },
+        system: SYSTEM,
+        messages: [{ role: "user", content: userContent }],
+      }).finalMessage();
 
-      const { content, totalTokens: t } = extractContent(res);
-      outputs.push(content);
-      totalTokens += t;
+      const text = message.content
+        .filter((b): b is TextBlock => b.type === "text")
+        .map((b) => b.text)
+        .join("");
+
+      outputs.push(text);
+      totalTokens += message.usage.input_tokens + message.usage.output_tokens;
     }
 
     const raw_output =

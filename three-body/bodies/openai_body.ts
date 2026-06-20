@@ -1,10 +1,9 @@
-import { callDeepSeek, extractContent } from "../utils/deepseek_client.js";
+// Validation body — uses the OpenAI SDK directly, routed to DeepSeek's
+// OpenAI-compatible endpoint. This is the most direct SDK-to-DeepSeek path.
+import OpenAI from "openai";
 import { BodyOutput, ContextLock } from "../schema.js";
 import { ThreeBodyConfig } from "../config.js";
 
-// This body plays the structure/validation role — implemented via DeepSeek with
-// a low temperature and precision-focused prompt to contrast with the high-temperature
-// challenger body and produce deterministic, structured output.
 const SYSTEM = `You are the Structure and Validation Engine in a three-body reasoning system.
 
 Your role:
@@ -33,12 +32,22 @@ Format your response as:
 - LOW confidence claims: [count]
 - Unresolved claims: [count]`;
 
+type ExtendedMessage = OpenAI.Chat.ChatCompletionMessage & {
+  reasoning_content?: string;
+};
+
 export async function runOpenAI(
   lock: ContextLock,
   deepseekOutput: string,
   claudeOutput: string,
   config: ThreeBodyConfig
 ): Promise<BodyOutput> {
+  // OpenAI SDK routed to DeepSeek's OpenAI-compatible endpoint
+  const client = new OpenAI({
+    apiKey: config.deepseek.apiKey,
+    baseURL: `${config.deepseek.baseUrl}/v1`,
+  });
+
   try {
     const outputs: string[] = [];
     let totalTokens = 0;
@@ -52,22 +61,26 @@ export async function runOpenAI(
         `---\n## Logic Engine Output\n${deepseekOutput}\n\n` +
         `---\n## Challenge Engine Output\n${claudeOutput}`;
 
-      const res = await callDeepSeek(
-        {
-          model: config.deepseek.models.validator,
-          messages: [
-            { role: "system", content: SYSTEM },
-            { role: "user", content: userContent },
-          ],
-          temperature: 0.3, // low temperature for factual precision
-          thinking: { type: "enabled" },
-        },
-        config
-      );
+      const completion = await client.chat.completions.create({
+        model: config.deepseek.models.validator,
+        messages: [
+          { role: "system", content: SYSTEM },
+          { role: "user", content: userContent },
+        ],
+        temperature: 0.3,
+        max_tokens: 8192,
+        // DeepSeek thinking mode via extra_body
+        ...({ thinking: { type: "enabled" } } as Record<string, unknown>),
+      } as Parameters<typeof client.chat.completions.create>[0]);
 
-      const { content, totalTokens: t } = extractContent(res);
-      outputs.push(content);
-      totalTokens += t;
+      const choice = completion.choices[0];
+      if (!choice) throw new Error("OpenAI/DeepSeek returned no choices");
+
+      const raw = choice.message as ExtendedMessage;
+      outputs.push(raw.content ?? "");
+      totalTokens +=
+        (completion.usage?.prompt_tokens ?? 0) +
+        (completion.usage?.completion_tokens ?? 0);
     }
 
     const raw_output =

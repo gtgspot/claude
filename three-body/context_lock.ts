@@ -1,8 +1,11 @@
 import { ContextLock } from "./schema.js";
 import { ThreeBodyConfig } from "./config.js";
 
+// Conservative estimate: 2 chars/token covers CJK, code, and other dense
+// tokenization cases where the common 4 chars/token assumption undershoots badly.
+// This ensures chunking triggers before hitting context limits rather than after.
 function estimateTokens(text: string): number {
-  return Math.ceil(text.length / 4);
+  return Math.ceil(text.length / 2);
 }
 
 function generateId(): string {

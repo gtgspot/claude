@@ -1,3 +1,4 @@
+import OpenAI from "openai";
 import { ThreeBodyConfig } from "../config.js";
 
 export interface DeepSeekMessage {
@@ -10,7 +11,6 @@ export interface DeepSeekOptions {
   messages: DeepSeekMessage[];
   temperature?: number;
   max_tokens?: number;
-  // DeepSeek reasoning mode — activates extended chain-of-thought
   thinking?: { type: "enabled" | "disabled" };
 }
 
@@ -29,31 +29,61 @@ export interface DeepSeekResponse {
   };
 }
 
+// Routes the OpenAI SDK to DeepSeek's OpenAI-compatible endpoint.
+// All three bodies, the challenge gate, and synthesis share this client.
+export function createOpenAIClient(config: ThreeBodyConfig): OpenAI {
+  return new OpenAI({
+    apiKey: config.deepseek.apiKey,
+    baseURL: `${config.deepseek.baseUrl}/v1`,
+  });
+}
+
 export async function callDeepSeek(
   options: DeepSeekOptions,
   config: ThreeBodyConfig
 ): Promise<DeepSeekResponse> {
-  const response = await fetch(`${config.deepseek.baseUrl}/v1/chat/completions`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${config.deepseek.apiKey}`,
-    },
-    body: JSON.stringify({
-      model: options.model,
-      messages: options.messages,
-      temperature: options.temperature ?? 0.7,
-      max_tokens: options.max_tokens ?? 8192,
-      thinking: options.thinking ?? { type: "enabled" },
-    }),
-  });
+  const client = createOpenAIClient(config);
 
-  if (!response.ok) {
-    const error = await response.text();
-    throw new Error(`DeepSeek API error ${response.status}: ${error}`);
+  const body: Record<string, unknown> = {
+    model: options.model,
+    messages: options.messages,
+    max_tokens: options.max_tokens ?? 8192,
+  };
+
+  // deepseek-reasoner doesn't support arbitrary temperatures
+  if (!options.model.includes("reasoner")) {
+    body["temperature"] = options.temperature ?? 0.7;
   }
 
-  return response.json() as Promise<DeepSeekResponse>;
+  // DeepSeek thinking mode is a top-level param; pass via extra_body
+  if (options.thinking?.type !== "disabled") {
+    body["thinking"] = { type: "enabled" };
+  }
+
+  const completion = await client.chat.completions.create(
+    body as Parameters<typeof client.chat.completions.create>[0]
+  );
+
+  type ExtendedMessage = OpenAI.Chat.ChatCompletionMessage & {
+    reasoning_content?: string;
+  };
+
+  return {
+    choices: completion.choices.map((c) => ({
+      message: {
+        content: c.message.content ?? "",
+        reasoning_content: (c.message as ExtendedMessage).reasoning_content,
+      },
+      finish_reason: c.finish_reason ?? "stop",
+    })),
+    usage: completion.usage
+      ? {
+          prompt_tokens: completion.usage.prompt_tokens,
+          completion_tokens: completion.usage.completion_tokens,
+          total_tokens: completion.usage.total_tokens,
+        }
+      : undefined,
+  };
 }
 
 export function extractContent(res: DeepSeekResponse): {

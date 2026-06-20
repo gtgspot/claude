@@ -1,4 +1,6 @@
-import { callDeepSeek, extractContent } from "./utils/deepseek_client.js";
+// Challenge Gate — uses the Anthropic SDK interface (AnthropicViaDeepSeek)
+// routed through DeepSeek's OpenAI-compatible API via the OpenAI SDK.
+import { AnthropicViaDeepSeek, TextBlock } from "./utils/anthropic_via_deepseek.js";
 import { BodyOutput, ChallengeResult, ConvergenceStatus } from "./schema.js";
 import { ThreeBodyConfig } from "./config.js";
 
@@ -31,11 +33,16 @@ interface ParsedChallenge {
 
 function parseChallenge(raw: string): ParsedChallenge {
   const jsonMatch = raw.match(/\{[\s\S]*\}/);
-  if (!jsonMatch) return { challenges: [], survived: true, challenge_notes: raw };
+  // Unparseable gate responses default to survived: false — a gate that produces
+  // no usable JSON cannot confirm the output passed cross-examination, so it must
+  // not count as a successful challenge (which would inflate convergence scores).
+  if (!jsonMatch) {
+    return { challenges: [], survived: false, challenge_notes: `Parse failed — no JSON block in gate response: ${raw.slice(0, 200)}` };
+  }
   try {
     return JSON.parse(jsonMatch[0]) as ParsedChallenge;
-  } catch {
-    return { challenges: [], survived: true, challenge_notes: raw };
+  } catch (e) {
+    return { challenges: [], survived: false, challenge_notes: `Parse failed — malformed JSON: ${String(e)}` };
   }
 }
 
@@ -45,6 +52,9 @@ export async function runChallengeGate(
   openaiOutput: BodyOutput,
   config: ThreeBodyConfig
 ): Promise<{ results: ChallengeResult[]; convergence_status: ConvergenceStatus }> {
+  // Uses the Anthropic SDK interface routed through DeepSeek
+  const client = new AnthropicViaDeepSeek(config, config.deepseek.models.challenger);
+
   const bodies = [deepseekOutput, claudeOutput, openaiOutput];
   const results: ChallengeResult[] = [];
 
@@ -63,25 +73,21 @@ export async function runChallengeGate(
     const challengers = bodies.filter((b) => b.body !== target.body);
     const prompt = buildChallengePrompt(target, challengers);
 
-    const res = await callDeepSeek(
-      {
-        model: config.deepseek.models.challenger,
-        messages: [
-          {
-            role: "system",
-            content:
-              "You are a rigorous cross-examiner in a three-body AI reasoning system. Return only valid JSON.",
-          },
-          { role: "user", content: prompt },
-        ],
-        temperature: 0.5,
-        thinking: { type: "enabled" },
-      },
-      config
-    );
+    const message = await client.messages.create({
+      model: config.deepseek.models.challenger,
+      max_tokens: 4096,
+      thinking: { type: "adaptive" },
+      system:
+        "You are a rigorous cross-examiner in a three-body AI reasoning system. Return only valid JSON.",
+      messages: [{ role: "user", content: prompt }],
+    });
 
-    const { content } = extractContent(res);
-    const parsed = parseChallenge(content);
+    const rawText = message.content
+      .filter((b): b is TextBlock => b.type === "text")
+      .map((b) => b.text)
+      .join("");
+
+    const parsed = parseChallenge(rawText);
 
     results.push({
       original_body: target.body,

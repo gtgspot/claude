@@ -1,6 +1,6 @@
 {
   "name": "three-body-orchestrator",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Three-Body Digital Integration System — DeepSeek-only multi-model reasoning orchestrator",
   "type": "module",
   "main": "./dist/index.js",
@@ -8,6 +8,9 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsx index.ts"
+  },
+  "dependencies": {
+    "openai": "^4.0.0"
   },
   "devDependencies": {
     "typescript": "~5.8.3",

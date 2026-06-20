@@ -1,4 +1,6 @@
-import { callDeepSeek, extractContent } from "./utils/deepseek_client.js";
+// De Novo Synthesis — uses the Anthropic SDK interface (AnthropicViaDeepSeek)
+// routed through DeepSeek's OpenAI-compatible API via the OpenAI SDK.
+import { AnthropicViaDeepSeek, TextBlock } from "./utils/anthropic_via_deepseek.js";
 import {
   BodyOutput,
   ChallengeResult,
@@ -60,6 +62,9 @@ export async function runSynthesis(
   convergence: ConvergenceStatus,
   config: ThreeBodyConfig
 ): Promise<{ synthesis: string; confidence_tier: ConfidenceTier }> {
+  // Uses the Anthropic SDK interface routed through DeepSeek
+  const client = new AnthropicViaDeepSeek(config, config.deepseek.models.reasoner);
+
   const prompt = buildSynthesisPrompt(
     query,
     deepseek,
@@ -69,28 +74,23 @@ export async function runSynthesis(
     convergence
   );
 
-  const res = await callDeepSeek(
-    {
-      model: config.deepseek.models.reasoner, // strongest model for final synthesis
-      messages: [
-        {
-          role: "system",
-          content:
-            "You are the De Novo Synthesis Engine in a three-body AI reasoning system. " +
-            "Your synthesis is the authoritative final output.",
-        },
-        { role: "user", content: prompt },
-      ],
-      thinking: { type: "enabled" },
-      max_tokens: 16384,
-    },
-    config
-  );
+  const message = await client.messages.stream({
+    model: config.deepseek.models.reasoner,
+    max_tokens: 16384,
+    thinking: { type: "adaptive" },
+    system:
+      "You are the De Novo Synthesis Engine in a three-body AI reasoning system. " +
+      "Your synthesis is the authoritative final output.",
+    messages: [{ role: "user", content: prompt }],
+  }).finalMessage();
 
-  const { content } = extractContent(res);
+  const synthesis = message.content
+    .filter((b): b is TextBlock => b.type === "text")
+    .map((b) => b.text)
+    .join("");
 
   return {
-    synthesis: content,
-    confidence_tier: parseConfidenceTier(content),
+    synthesis,
+    confidence_tier: parseConfidenceTier(synthesis),
   };
 }
