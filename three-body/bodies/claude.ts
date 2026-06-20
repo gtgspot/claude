@@ -38,23 +38,24 @@ export async function runClaude(
 ): Promise<BodyOutput> {
   const client = new AnthropicViaDeepSeek(config, config.deepseek.models.challenger);
 
-  try {
-    const outputs: string[] = [];
-    let totalTokens = 0;
+  const outputs: string[] = [];
+  let totalTokens = 0;
+  const chunkErrors: string[] = [];
 
-    for (let i = 0; i < lock.chunks.length; i++) {
-      const chunkLabel =
-        lock.chunk_count > 1 ? `[Chunk ${i + 1}/${lock.chunk_count}]\n\n` : "";
+  for (let i = 0; i < lock.chunks.length; i++) {
+    const chunkLabel =
+      lock.chunk_count > 1 ? `[Chunk ${i + 1}/${lock.chunk_count}]\n\n` : "";
 
-      // Use only the matching chunk's prior output to avoid inflating the prompt
-      // with the full multi-chunk concatenation on every iteration.
-      const priorOutput =
-        deepseekResult.chunk_outputs?.[i] ?? deepseekResult.raw_output;
+    // Use only the matching chunk's prior output to avoid inflating the prompt
+    // with the full multi-chunk concatenation on every iteration.
+    const priorOutput =
+      deepseekResult.chunk_outputs?.[i] ?? deepseekResult.raw_output;
 
-      const userContent =
-        `${chunkLabel}${lock.chunks[i]}\n\n` +
-        `---\n## Logic Engine Output (this chunk)\n${priorOutput}`;
+    const userContent =
+      `${chunkLabel}${lock.chunks[i]}\n\n` +
+      `---\n## Logic Engine Output (this chunk)\n${priorOutput}`;
 
+    try {
       const message = await client.messages.stream({
         model: config.deepseek.models.challenger,
         max_tokens: 16000,
@@ -70,15 +71,22 @@ export async function runClaude(
 
       outputs.push(text);
       totalTokens += message.usage.input_tokens + message.usage.output_tokens;
+    } catch (err) {
+      // Retain a marker so downstream bodies still have an aligned chunk_outputs[i]
+      const marker = `[Chunk ${i + 1}/${lock.chunk_count} failed: ${String(err)}]`;
+      outputs.push(marker);
+      chunkErrors.push(marker);
     }
-
-    const raw_output =
-      outputs.length === 1
-        ? outputs[0]
-        : outputs.map((o, i) => `### Chunk ${i + 1}\n${o}`).join("\n\n---\n\n");
-
-    return { body: "claude", raw_output, chunk_outputs: outputs, token_count: totalTokens };
-  } catch (err) {
-    return { body: "claude", raw_output: "", error: String(err) };
   }
+
+  const raw_output =
+    outputs.length === 1
+      ? outputs[0]
+      : outputs.map((o, i) => `### Chunk ${i + 1}\n${o}`).join("\n\n---\n\n");
+
+  if (chunkErrors.length === lock.chunks.length) {
+    return { body: "claude", raw_output: "", chunk_outputs: outputs, error: chunkErrors.join("; ") };
+  }
+
+  return { body: "claude", raw_output, chunk_outputs: outputs, token_count: totalTokens };
 }

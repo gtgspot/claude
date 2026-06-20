@@ -49,25 +49,26 @@ export async function runOpenAI(
     baseURL: config.deepseek.baseUrl,
   });
 
-  try {
-    const outputs: string[] = [];
-    let totalTokens = 0;
+  const outputs: string[] = [];
+  let totalTokens = 0;
+  const chunkErrors: string[] = [];
 
-    for (let i = 0; i < lock.chunks.length; i++) {
-      const chunkLabel =
-        lock.chunk_count > 1 ? `[Chunk ${i + 1}/${lock.chunk_count}]\n\n` : "";
+  for (let i = 0; i < lock.chunks.length; i++) {
+    const chunkLabel =
+      lock.chunk_count > 1 ? `[Chunk ${i + 1}/${lock.chunk_count}]\n\n` : "";
 
-      // Align with the matching chunk from each prior body
-      const deepseekChunk =
-        deepseekResult.chunk_outputs?.[i] ?? deepseekResult.raw_output;
-      const claudeChunk =
-        claudeResult.chunk_outputs?.[i] ?? claudeResult.raw_output;
+    // Align with the matching chunk from each prior body
+    const deepseekChunk =
+      deepseekResult.chunk_outputs?.[i] ?? deepseekResult.raw_output;
+    const claudeChunk =
+      claudeResult.chunk_outputs?.[i] ?? claudeResult.raw_output;
 
-      const userContent =
-        `${chunkLabel}${lock.chunks[i]}\n\n` +
-        `---\n## Logic Engine Output (this chunk)\n${deepseekChunk}\n\n` +
-        `---\n## Challenge Engine Output (this chunk)\n${claudeChunk}`;
+    const userContent =
+      `${chunkLabel}${lock.chunks[i]}\n\n` +
+      `---\n## Logic Engine Output (this chunk)\n${deepseekChunk}\n\n` +
+      `---\n## Challenge Engine Output (this chunk)\n${claudeChunk}`;
 
+    try {
       const completion = await client.chat.completions.create({
         model: config.deepseek.models.validator,
         messages: [
@@ -87,15 +88,22 @@ export async function runOpenAI(
       totalTokens +=
         (completion.usage?.prompt_tokens ?? 0) +
         (completion.usage?.completion_tokens ?? 0);
+    } catch (err) {
+      // Retain a marker so downstream bodies still have an aligned chunk_outputs[i]
+      const marker = `[Chunk ${i + 1}/${lock.chunk_count} failed: ${String(err)}]`;
+      outputs.push(marker);
+      chunkErrors.push(marker);
     }
-
-    const raw_output =
-      outputs.length === 1
-        ? outputs[0]
-        : outputs.map((o, i) => `### Chunk ${i + 1}\n${o}`).join("\n\n---\n\n");
-
-    return { body: "openai", raw_output, chunk_outputs: outputs, token_count: totalTokens };
-  } catch (err) {
-    return { body: "openai", raw_output: "", error: String(err) };
   }
+
+  const raw_output =
+    outputs.length === 1
+      ? outputs[0]
+      : outputs.map((o, i) => `### Chunk ${i + 1}\n${o}`).join("\n\n---\n\n");
+
+  if (chunkErrors.length === lock.chunks.length) {
+    return { body: "openai", raw_output: "", chunk_outputs: outputs, error: chunkErrors.join("; ") };
+  }
+
+  return { body: "openai", raw_output, chunk_outputs: outputs, token_count: totalTokens };
 }
