@@ -31,11 +31,11 @@ Format your response as:
 
 export async function runClaude(
   lock: ContextLock,
-  deepseekOutput: string,
+  // Accept the full prior BodyOutput so we can align each chunk with its
+  // matching DeepSeek chunk output rather than replaying the full concatenation.
+  deepseekResult: BodyOutput,
   config: ThreeBodyConfig
 ): Promise<BodyOutput> {
-  // AnthropicViaDeepSeek implements the @anthropic-ai/sdk Messages interface
-  // and routes calls through the OpenAI SDK to DeepSeek's endpoint.
   const client = new AnthropicViaDeepSeek(config, config.deepseek.models.challenger);
 
   try {
@@ -46,11 +46,15 @@ export async function runClaude(
       const chunkLabel =
         lock.chunk_count > 1 ? `[Chunk ${i + 1}/${lock.chunk_count}]\n\n` : "";
 
+      // Use only the matching chunk's prior output to avoid inflating the prompt
+      // with the full multi-chunk concatenation on every iteration.
+      const priorOutput =
+        deepseekResult.chunk_outputs?.[i] ?? deepseekResult.raw_output;
+
       const userContent =
         `${chunkLabel}${lock.chunks[i]}\n\n` +
-        `---\n## Logic Engine Output\n${deepseekOutput}`;
+        `---\n## Logic Engine Output (this chunk)\n${priorOutput}`;
 
-      // Uses the same .stream().finalMessage() pattern as the Anthropic SDK
       const message = await client.messages.stream({
         model: config.deepseek.models.challenger,
         max_tokens: 16000,
@@ -73,7 +77,7 @@ export async function runClaude(
         ? outputs[0]
         : outputs.map((o, i) => `### Chunk ${i + 1}\n${o}`).join("\n\n---\n\n");
 
-    return { body: "claude", raw_output, token_count: totalTokens };
+    return { body: "claude", raw_output, chunk_outputs: outputs, token_count: totalTokens };
   } catch (err) {
     return { body: "claude", raw_output: "", error: String(err) };
   }

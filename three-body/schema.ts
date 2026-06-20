@@ -50,6 +50,9 @@ export interface ContextLock {
 export interface BodyOutput {
   body: "deepseek" | "claude" | "openai";
   raw_output: string;
+  // Individual per-chunk outputs kept separate so downstream bodies can pass
+  // only the chunk-aligned prior output rather than the full concatenation.
+  chunk_outputs?: string[];
   thinking?: string;
   token_count?: number;
   error?: string;

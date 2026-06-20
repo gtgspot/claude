@@ -20,7 +20,8 @@ export function loadConfig(): ThreeBodyConfig {
       apiKey: process.env.DEEPSEEK_API_KEY ?? "",
       baseUrl: "https://api.deepseek.com",
       models: {
-        reasoner: "deepseek-reasoner",  // R1 — deep chain-of-thought
+        // deepseek-reasoner is retired after 2026-07-24; use v4-pro with thinking enabled
+        reasoner: "deepseek-v4-pro",    // Pro + thinking mode — deep chain-of-thought
         challenger: "deepseek-v4-pro",  // Pro — adversarial + creative critique
         validator: "deepseek-v4-flash", // Flash — fast factual validation
       },

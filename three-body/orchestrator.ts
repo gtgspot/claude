@@ -52,13 +52,10 @@ export async function runThreeBody(
   // Phase 2: Sequential three-body activation
   // Each body receives prior bodies' outputs to build cumulative context
   const deepseekOutput = await runDeepSeek(lock, cfg);
-  const claudeOutput = await runClaude(lock, deepseekOutput.raw_output, cfg);
-  const openaiOutput = await runOpenAI(
-    lock,
-    deepseekOutput.raw_output,
-    claudeOutput.raw_output,
-    cfg
-  );
+  // Pass full BodyOutput so each body can align on chunk_outputs[i] rather
+  // than replaying the entire multi-chunk concatenation into every prompt.
+  const claudeOutput = await runClaude(lock, deepseekOutput, cfg);
+  const openaiOutput = await runOpenAI(lock, deepseekOutput, claudeOutput, cfg);
 
   // Phase 3: Cross-model challenge gate
   const { results: challengeResults, convergence_status } =

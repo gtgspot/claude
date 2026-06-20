@@ -58,7 +58,7 @@ export async function runDeepSeek(
         ? outputs[0]
         : outputs.map((o, i) => `### Chunk ${i + 1}\n${o}`).join("\n\n---\n\n");
 
-    return { body: "deepseek", raw_output, token_count: totalTokens };
+    return { body: "deepseek", raw_output, chunk_outputs: outputs, token_count: totalTokens };
   } catch (err) {
     return { body: "deepseek", raw_output: "", error: String(err) };
   }

@@ -50,10 +50,7 @@ export async function callDeepSeek(
     max_tokens: options.max_tokens ?? 8192,
   };
 
-  // deepseek-reasoner doesn't support arbitrary temperatures
-  if (!options.model.includes("reasoner")) {
-    body["temperature"] = options.temperature ?? 0.7;
-  }
+  body["temperature"] = options.temperature ?? 0.7;
 
   // DeepSeek thinking mode is a top-level param; pass via extra_body
   if (options.thinking?.type !== "disabled") {

@@ -38,11 +38,12 @@ type ExtendedMessage = OpenAI.Chat.ChatCompletionMessage & {
 
 export async function runOpenAI(
   lock: ContextLock,
-  deepseekOutput: string,
-  claudeOutput: string,
+  // Accept full BodyOutput objects so each chunk only sees its matching
+  // prior-stage outputs rather than the full multi-chunk concatenation.
+  deepseekResult: BodyOutput,
+  claudeResult: BodyOutput,
   config: ThreeBodyConfig
 ): Promise<BodyOutput> {
-  // OpenAI SDK routed to DeepSeek's OpenAI-compatible endpoint
   const client = new OpenAI({
     apiKey: config.deepseek.apiKey,
     baseURL: `${config.deepseek.baseUrl}/v1`,
@@ -56,10 +57,16 @@ export async function runOpenAI(
       const chunkLabel =
         lock.chunk_count > 1 ? `[Chunk ${i + 1}/${lock.chunk_count}]\n\n` : "";
 
+      // Align with the matching chunk from each prior body
+      const deepseekChunk =
+        deepseekResult.chunk_outputs?.[i] ?? deepseekResult.raw_output;
+      const claudeChunk =
+        claudeResult.chunk_outputs?.[i] ?? claudeResult.raw_output;
+
       const userContent =
         `${chunkLabel}${lock.chunks[i]}\n\n` +
-        `---\n## Logic Engine Output\n${deepseekOutput}\n\n` +
-        `---\n## Challenge Engine Output\n${claudeOutput}`;
+        `---\n## Logic Engine Output (this chunk)\n${deepseekChunk}\n\n` +
+        `---\n## Challenge Engine Output (this chunk)\n${claudeChunk}`;
 
       const completion = await client.chat.completions.create({
         model: config.deepseek.models.validator,
@@ -69,7 +76,6 @@ export async function runOpenAI(
         ],
         temperature: 0.3,
         max_tokens: 8192,
-        // DeepSeek thinking mode via extra_body
         ...({ thinking: { type: "enabled" } } as Record<string, unknown>),
       } as Parameters<typeof client.chat.completions.create>[0]);
 
@@ -88,7 +94,7 @@ export async function runOpenAI(
         ? outputs[0]
         : outputs.map((o, i) => `### Chunk ${i + 1}\n${o}`).join("\n\n---\n\n");
 
-    return { body: "openai", raw_output, token_count: totalTokens };
+    return { body: "openai", raw_output, chunk_outputs: outputs, token_count: totalTokens };
   } catch (err) {
     return { body: "openai", raw_output: "", error: String(err) };
   }
