@@ -87,7 +87,7 @@ export class AnthropicViaDeepSeek {
     this.modelOverride = modelOverride;
     this.openai = new OpenAI({
       apiKey: config.deepseek.apiKey,
-      baseURL: `${config.deepseek.baseUrl}/v1`,
+      baseURL: config.deepseek.baseUrl,
     });
   }
 

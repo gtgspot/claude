@@ -34,7 +34,7 @@ export interface DeepSeekResponse {
 export function createOpenAIClient(config: ThreeBodyConfig): OpenAI {
   return new OpenAI({
     apiKey: config.deepseek.apiKey,
-    baseURL: `${config.deepseek.baseUrl}/v1`,
+    baseURL: config.deepseek.baseUrl,
   });
 }
 

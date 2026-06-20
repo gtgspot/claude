@@ -46,7 +46,7 @@ export async function runOpenAI(
 ): Promise<BodyOutput> {
   const client = new OpenAI({
     apiKey: config.deepseek.apiKey,
-    baseURL: `${config.deepseek.baseUrl}/v1`,
+    baseURL: config.deepseek.baseUrl,
   });
 
   try {
