@@ -9,15 +9,16 @@ import {
 } from "./schema.js";
 import { ThreeBodyConfig } from "./config.js";
 
-// 200K chars per body keeps the synthesis prompt under ~300K chars total
-// (3 bodies + query + challenge summary + template), well within the 1M window.
+// 200K chars per body, 50K for challenge notes — keeps total synthesis prompt
+// well under 1M regardless of chunk count or note verbosity.
 const MAX_BODY_CHARS = 200_000;
+const MAX_CHALLENGE_CHARS = 50_000;
 
-function budgetOutput(text: string, label: string): string {
-  if (text.length <= MAX_BODY_CHARS) return text;
+function budgetOutput(text: string, label: string, maxChars = MAX_BODY_CHARS): string {
+  if (text.length <= maxChars) return text;
   return (
-    text.slice(0, MAX_BODY_CHARS) +
-    `\n\n[... ${label} output truncated at ${MAX_BODY_CHARS.toLocaleString()} chars]`
+    text.slice(0, maxChars) +
+    `\n\n[... ${label} truncated at ${maxChars.toLocaleString()} chars]`
   );
 }
 
@@ -29,12 +30,16 @@ function buildSynthesisPrompt(
   challengeResults: ChallengeResult[],
   convergence: ConvergenceStatus
 ): string {
-  const challengeSummary = challengeResults
-    .map(
-      (r) =>
-        `**${r.original_body}** — survived: ${r.survived}. ${r.challenge_notes}`
-    )
-    .join("\n");
+  const challengeSummary = budgetOutput(
+    challengeResults
+      .map(
+        (r) =>
+          `**${r.original_body}** — survived: ${r.survived}. ${r.challenge_notes}`
+      )
+      .join("\n"),
+    "challenge summary",
+    MAX_CHALLENGE_CHARS
+  );
 
   return (
     `## Original Query\n${query}\n\n` +

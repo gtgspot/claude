@@ -44,7 +44,18 @@ function parseChallenge(raw: string): ParsedChallenge {
     return { challenges: [], survived: false, challenge_notes: `Parse failed — no JSON block in gate response: ${raw.slice(0, 200)}` };
   }
   try {
-    return JSON.parse(jsonMatch[0]) as ParsedChallenge;
+    const raw = JSON.parse(jsonMatch[0]) as Record<string, unknown>;
+    // Coerce survived to a real boolean — the model may return "true"/"false"
+    // strings, which are truthy regardless of value and would inflate scores.
+    const survived = raw["survived"] === true || raw["survived"] === "true";
+    const challenges = Array.isArray(raw["challenges"])
+      ? (raw["challenges"] as Array<{ challenger: string; challenge_text: string }>)
+      : [];
+    const challenge_notes =
+      typeof raw["challenge_notes"] === "string"
+        ? raw["challenge_notes"]
+        : "No challenge notes provided";
+    return { challenges, survived, challenge_notes };
   } catch (e) {
     return { challenges: [], survived: false, challenge_notes: `Parse failed — malformed JSON: ${String(e)}` };
   }

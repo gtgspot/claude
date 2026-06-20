@@ -20,9 +20,18 @@ function chunkText(text: string, maxTokens: number): string[] {
   while (offset < text.length) {
     let end = Math.min(offset + maxChars, text.length);
     const breakPoint = text.lastIndexOf("\n\n", end);
-    if (breakPoint > offset) end = breakPoint;
-    chunks.push(text.slice(offset, end).trim());
-    offset = end;
+    let nextOffset: number;
+    if (breakPoint > offset) {
+      // Split at paragraph boundary; skip the \n\n separator so the next
+      // chunk doesn't start with leading blank lines (no trim needed).
+      end = breakPoint;
+      nextOffset = breakPoint + 2;
+    } else {
+      nextOffset = end;
+    }
+    // No .trim() — preserves semantic whitespace in code, diffs, YAML, Markdown.
+    chunks.push(text.slice(offset, end));
+    offset = nextOffset;
   }
   return chunks;
 }
@@ -37,6 +46,12 @@ export function lockContext(
   const queryPrefix = `QUERY:\n${query}\n\nINPUT SEGMENT:\n`;
   const prefixTokens = estimateTokens(queryPrefix);
   const chunkBudget = config.maxChunkTokens - prefixTokens;
+  if (chunkBudget <= 0) {
+    throw new Error(
+      `Query prefix (${prefixTokens} tokens estimated) leaves no room for input content; ` +
+      `maxChunkTokens is ${config.maxChunkTokens}. Shorten the query or increase maxChunkTokens.`
+    );
+  }
 
   const rawChunks = chunkText(inputText, chunkBudget);
   const chunks = rawChunks.map((c) => `${queryPrefix}${c}`);
