@@ -1,4 +1,4 @@
-import Anthropic from "@anthropic-ai/sdk";
+import { callDeepSeek, extractContent } from "./utils/deepseek_client.js";
 import {
   BodyOutput,
   ChallengeResult,
@@ -23,14 +23,12 @@ function buildSynthesisPrompt(
     .join("\n");
 
   return (
-    `You are the De Novo Synthesis Engine. Your task is to produce the final, authoritative ` +
-    `answer from three independent AI reasoning bodies.\n\n` +
     `## Original Query\n${query}\n\n` +
     `## Convergence Status: ${convergence}\n\n` +
     `## Challenge Gate Summary\n${challengeSummary}\n\n` +
-    `## DeepSeek (Logic/Decomposition) Output\n${deepseek.raw_output || "[failed]"}\n\n` +
-    `## Claude (Challenge/Long-Context) Output\n${claude.raw_output || "[failed]"}\n\n` +
-    `## OpenAI (Structure/Validation) Output\n${openai.raw_output || "[failed]"}\n\n` +
+    `## Logic Engine (Decomposition) Output\n${deepseek.raw_output || "[failed]"}\n\n` +
+    `## Challenge Engine (Adversarial) Output\n${claude.raw_output || "[failed]"}\n\n` +
+    `## Validation Engine (Structure) Output\n${openai.raw_output || "[failed]"}\n\n` +
     `---\n\n` +
     `Synthesize a final answer that:\n` +
     `1. Accepts claims with cross-body consensus\n` +
@@ -62,8 +60,6 @@ export async function runSynthesis(
   convergence: ConvergenceStatus,
   config: ThreeBodyConfig
 ): Promise<{ synthesis: string; confidence_tier: ConfidenceTier }> {
-  const client = new Anthropic({ apiKey: config.anthropic.apiKey });
-
   const prompt = buildSynthesisPrompt(
     query,
     deepseek,
@@ -73,24 +69,28 @@ export async function runSynthesis(
     convergence
   );
 
-  const stream = await client.messages.stream({
-    model: config.anthropic.model,
-    max_tokens: 16000,
-    thinking: { type: "adaptive" },
-    system:
-      "You are the De Novo Synthesis Engine in a three-body AI reasoning system. " +
-      "Your synthesis is the authoritative final output.",
-    messages: [{ role: "user", content: prompt }],
-  });
+  const res = await callDeepSeek(
+    {
+      model: config.deepseek.models.reasoner, // strongest model for final synthesis
+      messages: [
+        {
+          role: "system",
+          content:
+            "You are the De Novo Synthesis Engine in a three-body AI reasoning system. " +
+            "Your synthesis is the authoritative final output.",
+        },
+        { role: "user", content: prompt },
+      ],
+      thinking: { type: "enabled" },
+      max_tokens: 16384,
+    },
+    config
+  );
 
-  const message = await stream.finalMessage();
-  const synthesis = message.content
-    .filter((b) => b.type === "text")
-    .map((b) => (b as Anthropic.TextBlock).text)
-    .join("");
+  const { content } = extractContent(res);
 
   return {
-    synthesis,
-    confidence_tier: parseConfidenceTier(synthesis),
+    synthesis: content,
+    confidence_tier: parseConfidenceTier(content),
   };
 }

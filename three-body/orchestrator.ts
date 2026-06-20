@@ -29,7 +29,7 @@ export async function runThreeBody(
 ): Promise<ThreeBodyResult> {
   const cfg = config ?? loadConfig();
 
-  // Phase 1: Context Lockdown
+  // Phase 1: Context Lockdown — freeze full input before any model activates
   const lock = lockContext(query, inputText, cfg);
 
   const coverageIssues: CoverageIssue[] = [];
@@ -40,7 +40,7 @@ export async function runThreeBody(
       input_document: query,
       bodies_receiving_full_input: [],
       bodies_truncating_input: ["deepseek", "claude", "openai"],
-      truncation_point_tokens: cfg.deepseekContextLimit,
+      truncation_point_tokens: cfg.maxChunkTokens,
       material_lost: "Input exceeds single-pass context; chunked reprocessing activated",
       reprocessing_triggered: true,
       chunking_strategy: `Sequential ${lock.chunk_count}-chunk reprocessing across all three bodies`,
@@ -49,8 +49,9 @@ export async function runThreeBody(
     });
   }
 
-  // Phase 2: Three-Body Activation (sequential — each body builds on prior)
-  const [deepseekOutput] = await Promise.all([runDeepSeek(lock, cfg)]);
+  // Phase 2: Sequential three-body activation
+  // Each body receives prior bodies' outputs to build cumulative context
+  const deepseekOutput = await runDeepSeek(lock, cfg);
   const claudeOutput = await runClaude(lock, deepseekOutput.raw_output, cfg);
   const openaiOutput = await runOpenAI(
     lock,
@@ -59,7 +60,7 @@ export async function runThreeBody(
     cfg
   );
 
-  // Phase 3: Challenge Gate
+  // Phase 3: Cross-model challenge gate
   const { results: challengeResults, convergence_status } =
     await runChallengeGate(deepseekOutput, claudeOutput, openaiOutput, cfg);
 
@@ -74,7 +75,6 @@ export async function runThreeBody(
     cfg
   );
 
-  // Assemble ReasoningIssue record
   const reasoningIssue: ReasoningIssue = {
     reasoning_issue_id: nextIssueId(),
     query_segment: query,
@@ -96,7 +96,9 @@ export async function runThreeBody(
       chunk_reprocessing_required: lock.chunk_count > 1,
     },
     objection_routes: challengeResults.flatMap((r) =>
-      r.challenges.map((c) => `[${c.challenger}→${r.original_body}] ${c.challenge_text}`)
+      r.challenges.map(
+        (c) => `[${c.challenger}→${r.original_body}] ${c.challenge_text}`
+      )
     ),
     output: synthesis,
     fallback:
@@ -110,9 +112,10 @@ export async function runThreeBody(
     (claudeOutput.token_count ?? 0) +
     (openaiOutput.token_count ?? 0);
 
-  const activatedBodies: string[] = ["deepseek"];
-  if (!claudeOutput.error) activatedBodies.push("claude");
-  if (!openaiOutput.error) activatedBodies.push("openai");
+  const activatedBodies: string[] = [];
+  if (!deepseekOutput.error) activatedBodies.push("deepseek-reasoner");
+  if (!claudeOutput.error) activatedBodies.push("deepseek-challenger");
+  if (!openaiOutput.error) activatedBodies.push("deepseek-validator");
 
   return {
     reasoning_issues: [reasoningIssue],

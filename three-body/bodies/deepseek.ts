@@ -1,7 +1,8 @@
+import { callDeepSeek, extractContent } from "../utils/deepseek_client.js";
 import { BodyOutput, ContextLock } from "../schema.js";
 import { ThreeBodyConfig } from "../config.js";
 
-const DEEPSEEK_SYSTEM = `You are the Logic and Decomposition Engine in a three-body reasoning system.
+const SYSTEM = `You are the Logic and Decomposition Engine in a three-body reasoning system.
 
 Your role:
 1. Break the input into discrete logical sub-problems
@@ -23,49 +24,6 @@ Format your response as:
 ## Decomposition Summary
 [concise conclusion]`;
 
-interface DeepSeekMessage {
-  role: "user" | "assistant" | "system";
-  content: string;
-}
-
-interface DeepSeekResponse {
-  choices: Array<{
-    message: {
-      content: string;
-      reasoning_content?: string;
-    };
-    finish_reason: string;
-  }>;
-  usage?: {
-    total_tokens: number;
-  };
-}
-
-async function callDeepSeek(
-  messages: DeepSeekMessage[],
-  config: ThreeBodyConfig
-): Promise<DeepSeekResponse> {
-  const response = await fetch(`${config.deepseek.baseUrl}/v1/chat/completions`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${config.deepseek.apiKey}`,
-    },
-    body: JSON.stringify({
-      model: config.deepseek.model,
-      messages,
-      stream: false,
-    }),
-  });
-
-  if (!response.ok) {
-    const error = await response.text();
-    throw new Error(`DeepSeek API error ${response.status}: ${error}`);
-  }
-
-  return response.json() as Promise<DeepSeekResponse>;
-}
-
 export async function runDeepSeek(
   lock: ContextLock,
   config: ThreeBodyConfig
@@ -75,23 +33,24 @@ export async function runDeepSeek(
     let totalTokens = 0;
 
     for (let i = 0; i < lock.chunks.length; i++) {
-      const chunk = lock.chunks[i];
       const chunkLabel =
         lock.chunk_count > 1 ? `[Chunk ${i + 1}/${lock.chunk_count}]\n\n` : "";
 
-      const result = await callDeepSeek(
-        [
-          { role: "system", content: DEEPSEEK_SYSTEM },
-          { role: "user", content: `${chunkLabel}${chunk}` },
-        ],
+      const res = await callDeepSeek(
+        {
+          model: config.deepseek.models.reasoner,
+          messages: [
+            { role: "system", content: SYSTEM },
+            { role: "user", content: `${chunkLabel}${lock.chunks[i]}` },
+          ],
+          thinking: { type: "enabled" },
+        },
         config
       );
 
-      const choice = result.choices[0];
-      if (!choice) throw new Error("DeepSeek returned no choices");
-
-      outputs.push(choice.message.content);
-      totalTokens += result.usage?.total_tokens ?? 0;
+      const { content, reasoning, totalTokens: t } = extractContent(res);
+      outputs.push(content);
+      totalTokens += t;
     }
 
     const raw_output =
@@ -99,17 +58,8 @@ export async function runDeepSeek(
         ? outputs[0]
         : outputs.map((o, i) => `### Chunk ${i + 1}\n${o}`).join("\n\n---\n\n");
 
-    return {
-      body: "deepseek",
-      raw_output,
-      token_count: totalTokens,
-    };
+    return { body: "deepseek", raw_output, token_count: totalTokens };
   } catch (err) {
-    const error = err instanceof Error ? err.message : String(err);
-    return {
-      body: "deepseek",
-      raw_output: "",
-      error,
-    };
+    return { body: "deepseek", raw_output: "", error: String(err) };
   }
 }

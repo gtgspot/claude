@@ -1,41 +1,31 @@
+export interface DeepSeekModels {
+  reasoner: string;   // logical decomposition — chain-of-thought
+  challenger: string; // adversarial challenge — finds flaws
+  validator: string;  // factual validation — structured output
+}
+
 export interface ThreeBodyConfig {
-  anthropic: {
-    apiKey: string;
-    model: string;
-  };
   deepseek: {
     apiKey: string;
     baseUrl: string;
-    model: string;
-  };
-  openai: {
-    apiKey: string;
-    model: string;
+    models: DeepSeekModels;
   };
   maxChunkTokens: number;
-  claudeContextLimit: number;
-  deepseekContextLimit: number;
-  openaiContextLimit: number;
+  contextLimit: number; // shared across all three bodies
 }
 
 export function loadConfig(): ThreeBodyConfig {
   return {
-    anthropic: {
-      apiKey: process.env.ANTHROPIC_API_KEY ?? "",
-      model: "claude-opus-4-8",
-    },
     deepseek: {
       apiKey: process.env.DEEPSEEK_API_KEY ?? "",
       baseUrl: "https://api.deepseek.com",
-      model: "deepseek-reasoner",
+      models: {
+        reasoner: "deepseek-reasoner",  // R1 — deep chain-of-thought
+        challenger: "deepseek-v4-pro",  // Pro — adversarial + creative critique
+        validator: "deepseek-v4-flash", // Flash — fast factual validation
+      },
     },
-    openai: {
-      apiKey: process.env.OPENAI_API_KEY ?? "",
-      model: "gpt-4o",
-    },
-    maxChunkTokens: 100_000,
-    claudeContextLimit: 200_000,
-    deepseekContextLimit: 128_000,
-    openaiContextLimit: 128_000,
+    maxChunkTokens: 900_000,
+    contextLimit: 1_000_000, // DeepSeek 1M token window
   };
 }

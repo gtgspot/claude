@@ -1,16 +1,13 @@
 {
   "name": "three-body-orchestrator",
-  "version": "1.0.0",
-  "description": "Three-Body Digital Integration System — DeepSeek + Anthropic + OpenAI multi-model reasoning orchestrator",
+  "version": "2.0.0",
+  "description": "Three-Body Digital Integration System — DeepSeek-only multi-model reasoning orchestrator",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "dev": "tsx index.ts"
-  },
-  "dependencies": {
-    "@anthropic-ai/sdk": "^0.70.0"
   },
   "devDependencies": {
     "typescript": "~5.8.3",

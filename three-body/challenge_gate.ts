@@ -1,16 +1,11 @@
+import { callDeepSeek, extractContent } from "./utils/deepseek_client.js";
 import { BodyOutput, ChallengeResult, ConvergenceStatus } from "./schema.js";
-import Anthropic from "@anthropic-ai/sdk";
 import { ThreeBodyConfig } from "./config.js";
 
-// Each body's output is challenged by the other two.
-// If challenges surface a substantive contradiction, survived = false.
-function buildChallengePrompt(
-  outputUnderReview: BodyOutput,
-  challengers: BodyOutput[]
-): string {
+function buildChallengePrompt(target: BodyOutput, challengers: BodyOutput[]): string {
   return (
-    `Review the following output from the ${outputUnderReview.body} engine:\n\n` +
-    `"""\n${outputUnderReview.raw_output}\n"""\n\n` +
+    `Review the following output from the ${target.body} engine:\n\n` +
+    `"""\n${target.raw_output}\n"""\n\n` +
     `These are the outputs from the other two engines for comparison:\n\n` +
     challengers
       .map((c) => `### ${c.body.toUpperCase()} Engine\n${c.raw_output}`)
@@ -19,7 +14,7 @@ function buildChallengePrompt(
     `1. Directly contradicted by the other engines\n` +
     `2. Unsupported and not corroborated\n` +
     `3. Logically inconsistent with the broader analysis\n\n` +
-    `Respond in JSON with this shape:\n` +
+    `Respond in JSON with this exact shape:\n` +
     `{\n` +
     `  "challenges": [{"challenger": "<engine>", "challenge_text": "<text>"}],\n` +
     `  "survived": <true|false>,\n` +
@@ -36,9 +31,7 @@ interface ParsedChallenge {
 
 function parseChallenge(raw: string): ParsedChallenge {
   const jsonMatch = raw.match(/\{[\s\S]*\}/);
-  if (!jsonMatch) {
-    return { challenges: [], survived: true, challenge_notes: raw };
-  }
+  if (!jsonMatch) return { challenges: [], survived: true, challenge_notes: raw };
   try {
     return JSON.parse(jsonMatch[0]) as ParsedChallenge;
   } catch {
@@ -51,11 +44,7 @@ export async function runChallengeGate(
   claudeOutput: BodyOutput,
   openaiOutput: BodyOutput,
   config: ThreeBodyConfig
-): Promise<{
-  results: ChallengeResult[];
-  convergence_status: ConvergenceStatus;
-}> {
-  const client = new Anthropic({ apiKey: config.anthropic.apiKey });
+): Promise<{ results: ChallengeResult[]; convergence_status: ConvergenceStatus }> {
   const bodies = [deepseekOutput, claudeOutput, openaiOutput];
   const results: ChallengeResult[] = [];
 
@@ -74,22 +63,25 @@ export async function runChallengeGate(
     const challengers = bodies.filter((b) => b.body !== target.body);
     const prompt = buildChallengePrompt(target, challengers);
 
-    const stream = await client.messages.stream({
-      model: config.anthropic.model,
-      max_tokens: 4096,
-      thinking: { type: "adaptive" },
-      system:
-        "You are a rigorous cross-examiner in a three-body AI reasoning system. Return only valid JSON.",
-      messages: [{ role: "user", content: prompt }],
-    });
+    const res = await callDeepSeek(
+      {
+        model: config.deepseek.models.challenger,
+        messages: [
+          {
+            role: "system",
+            content:
+              "You are a rigorous cross-examiner in a three-body AI reasoning system. Return only valid JSON.",
+          },
+          { role: "user", content: prompt },
+        ],
+        temperature: 0.5,
+        thinking: { type: "enabled" },
+      },
+      config
+    );
 
-    const message = await stream.finalMessage();
-    const rawText = message.content
-      .filter((b) => b.type === "text")
-      .map((b) => (b as Anthropic.TextBlock).text)
-      .join("");
-
-    const parsed = parseChallenge(rawText);
+    const { content } = extractContent(res);
+    const parsed = parseChallenge(content);
 
     results.push({
       original_body: target.body,
