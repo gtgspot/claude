@@ -69,7 +69,7 @@ export async function runOpenAI(
       `---\n## Challenge Engine Output (this chunk)\n${claudeChunk}`;
 
     try {
-      const completion = await client.chat.completions.create({
+      const completion = (await client.chat.completions.create({
         model: config.deepseek.models.validator,
         messages: [
           { role: "system", content: SYSTEM },
@@ -78,7 +78,7 @@ export async function runOpenAI(
         temperature: 0.3,
         max_tokens: 8192,
         ...({ thinking: { type: "enabled" } } as Record<string, unknown>),
-      } as Parameters<typeof client.chat.completions.create>[0]);
+      } as unknown as OpenAI.Chat.ChatCompletionCreateParamsNonStreaming)) as OpenAI.Chat.ChatCompletion;
 
       const choice = completion.choices[0];
       if (!choice) throw new Error("OpenAI/DeepSeek returned no choices");

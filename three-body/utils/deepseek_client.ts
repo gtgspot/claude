@@ -57,9 +57,12 @@ export async function callDeepSeek(
     body["thinking"] = { type: "enabled" };
   }
 
-  const completion = await client.chat.completions.create(
-    body as Parameters<typeof client.chat.completions.create>[0]
-  );
+  // Cast through unknown: the SDK's create() has overloaded return types
+  // (streaming vs non-streaming union); we don't pass stream:true so the
+  // result is always a ChatCompletion.
+  const completion = (await client.chat.completions.create(
+    body as unknown as OpenAI.Chat.ChatCompletionCreateParamsNonStreaming
+  )) as OpenAI.Chat.ChatCompletion;
 
   type ExtendedMessage = OpenAI.Chat.ChatCompletionMessage & {
     reasoning_content?: string;

@@ -121,9 +121,10 @@ export class AnthropicViaDeepSeek {
       body["thinking"] = { type: "enabled" };
     }
 
-    const completion = await this.openai.chat.completions.create(
-      body as Parameters<typeof this.openai.chat.completions.create>[0]
-    );
+    // Non-streaming call; cast through unknown to dodge the union return type.
+    const completion = (await this.openai.chat.completions.create(
+      body as unknown as OpenAI.Chat.ChatCompletionCreateParamsNonStreaming
+    )) as OpenAI.Chat.ChatCompletion;
 
     const choice = completion.choices[0];
     if (!choice) throw new Error("DeepSeek returned no choices");
