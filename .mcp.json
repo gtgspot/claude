@@ -3,10 +3,7 @@
     "three-body": {
       "type": "stdio",
       "command": "npm",
-      "args": ["--prefix", "three-body", "run", "mcp"],
-      "env": {
-        "DEEPSEEK_API_KEY": "${DEEPSEEK_API_KEY}"
-      }
+      "args": ["--prefix", "three-body", "run", "mcp"]
     }
   }
 }
