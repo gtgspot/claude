@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "three-body": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["tsx", "three-body/mcp_server.ts"],
+      "env": {
+        "DEEPSEEK_API_KEY": "${DEEPSEEK_API_KEY}"
+      }
+    }
+  }
+}
