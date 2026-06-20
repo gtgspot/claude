@@ -119,16 +119,23 @@ export async function runChallengeGate(
 
     if (chunkCount <= 1) {
       // Single chunk: challenge using raw_output directly
-      const parsed = await challengeChunk(
-        target.raw_output,
-        target.body,
-        challengers.map((c) => ({ body: c.body, text: c.raw_output })),
-        client,
-        config
-      );
-      allChallenges = parsed.challenges;
-      survived = parsed.survived;
-      noteParts.push(parsed.challenge_notes);
+      try {
+        const parsed = await challengeChunk(
+          target.raw_output,
+          target.body,
+          challengers.map((c) => ({ body: c.body, text: c.raw_output })),
+          client,
+          config
+        );
+        allChallenges = parsed.challenges;
+        survived = parsed.survived;
+        noteParts.push(parsed.challenge_notes);
+      } catch (err) {
+        // Transient errors (429, network, timeout) produce an Unresolved result
+        // rather than aborting the whole orchestration run.
+        survived = false;
+        noteParts.push(`Challenge call failed: ${String(err)}`);
+      }
     } else {
       // Multi-chunk: challenge each chunk against the matching chunk from each
       // challenger so no single prompt exceeds the 1M context window.
@@ -139,12 +146,17 @@ export async function runChallengeGate(
           body: c.body,
           text: c.chunk_outputs?.[i] ?? c.raw_output,
         }));
-        const parsed = await challengeChunk(
-          targetChunk, target.body, challengerData, client, config
-        );
-        chunkResults.push(parsed);
-        noteParts.push(`Chunk ${i + 1}/${chunkCount}: ${parsed.challenge_notes}`);
-        allChallenges.push(...parsed.challenges);
+        try {
+          const parsed = await challengeChunk(
+            targetChunk, target.body, challengerData, client, config
+          );
+          chunkResults.push(parsed);
+          noteParts.push(`Chunk ${i + 1}/${chunkCount}: ${parsed.challenge_notes}`);
+          allChallenges.push(...parsed.challenges);
+        } catch (err) {
+          chunkResults.push({ challenges: [], survived: false, challenge_notes: `call failed: ${String(err)}` });
+          noteParts.push(`Chunk ${i + 1}/${chunkCount}: call failed — ${String(err)}`);
+        }
       }
       // Survived only if every chunk passed cross-examination
       survived = chunkResults.every((r) => r.survived);

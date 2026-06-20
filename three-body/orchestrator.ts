@@ -110,9 +110,9 @@ export async function runThreeBody(
     (openaiOutput.token_count ?? 0);
 
   const activatedBodies: string[] = [];
-  if (!deepseekOutput.error) activatedBodies.push("deepseek-reasoner");
-  if (!claudeOutput.error) activatedBodies.push("deepseek-challenger");
-  if (!openaiOutput.error) activatedBodies.push("deepseek-validator");
+  if (!deepseekOutput.error) activatedBodies.push(`deepseek:${cfg.deepseek.models.reasoner}`);
+  if (!claudeOutput.error) activatedBodies.push(`claude:${cfg.deepseek.models.challenger}`);
+  if (!openaiOutput.error) activatedBodies.push(`openai:${cfg.deepseek.models.validator}`);
 
   return {
     reasoning_issues: [reasoningIssue],
