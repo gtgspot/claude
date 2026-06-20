@@ -69,5 +69,11 @@ export async function runDeepSeek(
     return { body: "deepseek", raw_output: "", chunk_outputs: outputs, error: chunkErrors.join("; ") };
   }
 
-  return { body: "deepseek", raw_output, chunk_outputs: outputs, token_count: totalTokens };
+  return {
+    body: "deepseek",
+    raw_output,
+    chunk_outputs: outputs,
+    token_count: totalTokens,
+    ...(chunkErrors.length > 0 ? { partial_errors: chunkErrors } : {}),
+  };
 }

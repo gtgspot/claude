@@ -57,6 +57,25 @@ export async function runThreeBody(
   const claudeOutput = await runClaude(lock, deepseekOutput, cfg);
   const openaiOutput = await runOpenAI(lock, deepseekOutput, claudeOutput, cfg);
 
+  // Phase 2b: Record any partial-chunk failures as coverage issues so the
+  // orchestrator can't claim full coverage on a body that lost some chunks.
+  for (const body of [deepseekOutput, claudeOutput, openaiOutput]) {
+    if (body.partial_errors?.length) {
+      coverageIssues.push({
+        coverage_issue_id: nextCoverageId(),
+        input_document: query,
+        bodies_receiving_full_input: [],
+        bodies_truncating_input: [body.body],
+        truncation_point_tokens: cfg.maxChunkTokens,
+        material_lost: `${body.body} lost ${body.partial_errors.length}/${lock.chunk_count} chunks to transient errors`,
+        reprocessing_triggered: false,
+        chunking_strategy: "Per-chunk error markers retained for alignment",
+        coverage_risk: `${body.body}'s analysis is incomplete; downstream consensus may be biased toward chunks the failed body never saw`,
+        fallback: body.partial_errors.join("; "),
+      });
+    }
+  }
+
   // Phase 3: Cross-model challenge gate
   const { results: challengeResults, convergence_status } =
     await runChallengeGate(deepseekOutput, claudeOutput, openaiOutput, cfg);
@@ -85,11 +104,17 @@ export async function runThreeBody(
       .map((r) => r.challenge_notes),
     confidence_tier,
     context_coverage: {
-      full_input_provided_to_all_bodies: lock.chunk_count === 1,
-      truncation_warnings:
-        lock.chunk_count > 1
-          ? [`Input chunked into ${lock.chunk_count} segments`]
-          : [],
+      full_input_provided_to_all_bodies:
+        lock.chunk_count === 1 &&
+        !deepseekOutput.partial_errors?.length &&
+        !claudeOutput.partial_errors?.length &&
+        !openaiOutput.partial_errors?.length,
+      truncation_warnings: [
+        ...(lock.chunk_count > 1 ? [`Input chunked into ${lock.chunk_count} segments`] : []),
+        ...[deepseekOutput, claudeOutput, openaiOutput]
+          .filter((b) => b.partial_errors?.length)
+          .map((b) => `${b.body} lost ${b.partial_errors!.length}/${lock.chunk_count} chunks`),
+      ],
       chunk_reprocessing_required: lock.chunk_count > 1,
     },
     objection_routes: challengeResults.flatMap((r) =>

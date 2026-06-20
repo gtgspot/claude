@@ -55,7 +55,12 @@ export interface BodyOutput {
   chunk_outputs?: string[];
   thinking?: string;
   token_count?: number;
+  // Set when EVERY chunk failed (total body failure).
   error?: string;
+  // Set when SOME but not all chunks failed; the body partially succeeded.
+  // The orchestrator surfaces these as coverage warnings so downstream
+  // phases can't claim full coverage on a partially-lost body.
+  partial_errors?: string[];
 }
 
 export interface ChallengeResult {

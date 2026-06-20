@@ -88,5 +88,11 @@ export async function runClaude(
     return { body: "claude", raw_output: "", chunk_outputs: outputs, error: chunkErrors.join("; ") };
   }
 
-  return { body: "claude", raw_output, chunk_outputs: outputs, token_count: totalTokens };
+  return {
+    body: "claude",
+    raw_output,
+    chunk_outputs: outputs,
+    token_count: totalTokens,
+    ...(chunkErrors.length > 0 ? { partial_errors: chunkErrors } : {}),
+  };
 }

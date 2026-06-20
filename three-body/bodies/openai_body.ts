@@ -105,5 +105,11 @@ export async function runOpenAI(
     return { body: "openai", raw_output: "", chunk_outputs: outputs, error: chunkErrors.join("; ") };
   }
 
-  return { body: "openai", raw_output, chunk_outputs: outputs, token_count: totalTokens };
+  return {
+    body: "openai",
+    raw_output,
+    chunk_outputs: outputs,
+    token_count: totalTokens,
+    ...(chunkErrors.length > 0 ? { partial_errors: chunkErrors } : {}),
+  };
 }
