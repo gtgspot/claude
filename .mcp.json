@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "three-body": {
+      "type": "stdio",
+      "command": "npm",
+      "args": ["--prefix", "three-body", "run", "mcp"]
+    }
+  }
+}

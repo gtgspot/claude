@@ -13,3 +13,7 @@ Claude.app/Contents/Resources/smol-bin.x64.img
 Claude.app/Contents/Resources/smol-bin.arm64.img
 Claude.app/Contents/Resources/claude-ssh/
 Claude.app/Contents/Resources/app.asar.unpacked/
+.claude/settings.local.json
+node_modules/
+three-body/node_modules/
+three-body/dist/
